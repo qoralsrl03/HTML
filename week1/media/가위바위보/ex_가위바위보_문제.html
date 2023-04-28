@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<style>
+
+	</style>
+	<meta charset="UTF-8">
+	<title> 가위바위보 </title>
+	<script>
+		function reGame() {
+			location.reload();
+		}
+		document.write("<h1>컴퓨터 가위, 바위, 보 맞추기</h1>");
+		let game = prompt("가위, 바위, 보 중 선택하세요?", "");
+		let com = Math.ceil(Math.random() * 3);
+
+		let result = 0;
+		switch (game) {
+
+			case '가위':
+				game = 1;
+				document.write('유저'+'<img src=\"./좌-가위.jpg\">');
+				if (game == com) {
+					result = 0;
+					document.write('<img src=\"./우-가위.jpg\">' + '컴퓨터');
+				} else {
+					result = (com == 2) ? (-1) : (1);
+					if (com == 2) {
+						document.write('<img src=\"./우-바위.jpg\">' + '컴퓨터');
+					} else {
+						document.write('<img src=\"./우-보.jpg\">' + '컴퓨터');
+					}
+				}
+				break;
+
+			case '바위':
+				game = 2;
+				document.write('유저'+'<img src=\"./좌-바위.jpg\">');
+				if (game == com) {
+					result = 0;
+					document.write('<img src=\"./우-바위.jpg\">' + '컴퓨터');
+				} else {
+					result = (com == 3) ? (-1) : (1);
+					if (com == 1) {
+						document.write('<img src=\"./우-가위.jpg\">' + '컴퓨터');
+					} else {
+						document.write('<img src=\"./우-보.jpg\">' + '컴퓨터');
+					}
+				}
+				break;
+			default:
+				game = 3;
+				document.write('유저'+'<img src=\"./좌-보.jpg\">');
+				if (game == com) {
+					result = 0;
+					document.write('<img src=\"./우-보.jpg\">' + '컴퓨터');
+				} else {
+					result = (com == 1) ? (-1) : (1);
+					if (com == 1) {
+						document.write('<img src=\"./우-가위.jpg\">' + '컴퓨터');
+					} else {
+						document.write('<img src=\"./우-바위.jpg\">' + '컴퓨터');
+					}
+				}
+				break;
+		}
+		//랜덤함수를 활용하여 가위바위보 게임을 만들어보세요 ^^ 
+		if (result == 0) {
+			document.write('<p><br>'+'<img src=\"./game_3.jpg\">');
+		} else if (result == 1) {
+			document.write('<p><br>'+'<img src=\"./game_1.jpg\">');
+		} else {
+			document.write('<p><br>'+'<img src=\"./game_2.jpg\">');
+		}
+
+
+
+
+	</script>
+</head>
+
+<body>
+</body>
+
+</html>

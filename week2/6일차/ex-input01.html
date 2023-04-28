@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>이벤트와 input tag</title>
+    <script>
+        let cnt = 0;
+        function fn_check(){
+            cnt++;
+            let msg = "버튼을" + cnt + "번 누르셨네요?<br>";
+            document.getElementById('id_div').innerHTML += msg;
+        }
+
+        function fn_color(obj){
+            console.log(obj);
+            console.log(obj.value);
+            document.getElementById('input01').style.color = obj.value;
+        }
+        
+        function fn_write(obj){
+            // input02의 value를 가져와서
+            // id_div에 넣어주세요.
+            let msg = document.getElementById('input02').value + "<br>";
+            document.getElementById('id_div').innerHTML+=msg;
+            document.getElementById('input02').value = "";
+        }
+
+        function fn_enter(e){
+            // console.log(e);-> 이벤트 로그 확인
+            // console.log(e.keyCode); -> 키보드 눌렀을때의 해당 키의 키값을 확인하는 방법
+            if(e.keyCode==13){
+                fn_write();
+            }
+        }
+    </script>
+</head>
+<body>
+    <div>
+        <p><input type="button" id="input01" value="몇번 클릭?" onclick="fn_check()"></p>
+        <input type="color" onchange="fn_color(this)">
+        <input type="text" id="input02" onkeyup = "fn_enter(event)">
+        <input type="button" value = "적용" onclick = "fn_write()"> 
+    </div>
+    <div id = "id_div"></div>
+    
+</body>
+</html>

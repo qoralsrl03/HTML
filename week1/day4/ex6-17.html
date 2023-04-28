@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>for문</title>
+</head>
+
+<body>
+    <h3>for문으로 폰트 크기 출력</h3>
+    <hr>
+    <script>
+        for (let size = 10; size <= 35; size += 5) {
+            document.write("<span "); //뒤에 한칸 안뛰면 spanstyle 하나로 묶어서 인식함
+            document.write("style='font-size:" + size + "px' >");
+            document.write(size + "px");
+            document.write("</span>");
+        }
+    </script>
+</body>
+
+</html>

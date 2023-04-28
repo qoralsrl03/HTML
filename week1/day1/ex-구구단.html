@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>구구단풀기</title>
+    <script>
+        
+        let a,b;
+        let cnt = 0
+        function fn_int() {
+            return Math.floor(Math.random() * 8) + 2;
+        }
+        for (let i = 0; i < 5; i++) {
+            a = fn_int();
+            b = fn_int();
+            document.writeln("=====================<br>");
+            let answer = prompt(a + '*' + b + '=?');
+            answer = parseInt(answer);
+            if(a*b==answer){
+                document.writeln(a+'*'+b +" 문제맞음<br>");
+                cnt+=1;
+            }else{
+                document.writeln(a+'*'+b+" 문제틀림 정답은 : "+(a*b)+"<br> ");
+            }
+        }
+        
+
+        document.write("총 5문제, 맞은 횟수 : "+ cnt + ", 틀린 횟수 : "+ (5-cnt));
+
+        /*
+        구구단 연습기를 만들어 주세요
+        랜덤 함수를 이용하여
+        랜덤 구구단 문제 생성 후 사용자에게 퀴즈(5판)
+        5판 이후 몇번 맞추고 몇번 틀렸는지 출력
+        */
+
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
