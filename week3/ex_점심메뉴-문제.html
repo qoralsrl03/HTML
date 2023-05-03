@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h3>오늘은 뭘 먹을까?</h3>
+    <hr>
+    <script>
+        let rand = [], rand2 = [], rand3 = [], sum = 0;
+        console.log(rand);
+        let menus = ['중국집', '맛고을', '버거킹', '다이어트', '막걸리&파전', '고등어백반', '서브웨이'];
+        let classMate = ['강지혜', '고동욱', '김대일', '김청아', '김태윤', '김현곤', '류서영', '박준하', '박진영', '박창연'
+            , '박혜라', '배준호', '백민기', '신경호', '유동윤', '윤종현', '이자영', '장유정', '정현진', '주예슬'
+            , '최성복', '홍민경'];
+        // 점심식사 팀
+        
+
+        function fn_num() {
+            const rand = []; // rand 배열을 선언합니다.
+            let sum = 0;
+            for (let i = 0; i < menus.length; i++) {
+                rand[i] = Math.floor(Math.random() * 5 + 2); // rand 배열에 값을 저장합니다.
+                sum += rand[i];
+            }
+            if (sum != classMate.length) {
+                return fn_num(); // rand 배열을 반환하는 것이 아니라, fn_num() 함수를 다시 호출합니다.
+            } else {
+                return rand; // rand 배열을 반환합니다.
+            }
+        }
+
+        function fn_rand() {
+            const rand = fn_num(); // fn_num() 함수를 호출하고, 반환된 rand 배열을 저장합니다.
+            for (let i = 0; i < rand.length; i++) {
+                for (let j = 0; j < rand[i]; j++) {
+                    rand2 = Math.floor(Math.random() * 23 + 0);
+                    rnad3 = Math.floor(Math.random() * 8 + 0);
+                    while (true) {
+                        if (classMate[rand2] == undefined) {
+                            rand2 = Math.floor(Math.random() * 23 + 0);
+                        } else {
+                            break;
+                        }
+                    }
+                    while (true) {
+                        if (menus[rand3] == undefined) {
+                            rand3 = Math.floor(Math.random() * 8 + 0);
+                        } else {
+                            break;
+                        }
+                    }
+                    let msg = classMate[rand2];
+                    let chain = menus[rand3];
+                    document.write(chain + ':');
+                    document.write(msg + ' '); // rand 배열의 각 요소에 해당하는 만큼 "A"를 출력합니다.
+                    menus.splice(rand3,1);
+                    classMate.splice(rand2, 1);
+                }
+                document.write("<br>-------------<br>");
+            }
+
+        }
+
+        fn_rand();
+        let objTeam = {};
+        fn_num();
+        document.write("<h1> 오늘의 점심 메뉴 팀<h1><br>")
+        document.write("<button onclick='location.reload();'>다시 추첨</button>");
+    </script>
+</body>
+
+</html>

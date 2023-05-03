@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Sort</title>
+    <script>
+        let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+        // arr.sort([compareFunction])
+        console.log(arr.sort()); // 디폴트 오름차순
+
+        arr.sort(function (a, b) {
+            return b - a;
+        })
+        console.log(arr); // 내림차순 정렬 (정렬 b를 a보다 낮은 인덱스로 정렬 b가 먼저옴)
+
+        //오름차순 정렬
+        arr.sort(function (a, b) {
+            return a - b;
+        })
+        console.log(arr); // 오름차순 정렬(정렬 a를 낮은 인덱스로 정렬a가 먼저옴)
+
+        function shuffle(array) {
+                //-1 또는 1로
+            return array.sort(function () {
+                return Math.random() - 0.5
+            }
+            );
+        }
+
+        function shuffle(array) {
+                //-1 또는 1로, 위의 식을 람다식으로 표현
+           return array.sort(() => Math.random()-0.5);
+        }
+        
+        let arr2 = shuffle(arr);
+        console.log(arr2);
+
+    </script>
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
