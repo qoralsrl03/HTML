@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>팝업</title>
+    <script>
+        function SetCookie(name, val, expireDate) {
+            let cookieStr = name + "=" + escape(val) + ((expireDate == null) ? "" : ("; expires=" + expireDate.toUTCString()));
+            document.cookie = cookieStr;
+        }
+
+        function fn_check() {
+            let now = new Date();
+            if (document.getElementById("check").checked) {
+                now.setTime(now.getTime() + (2 * 60 * 1000))
+                SetCookie('pop', 'Y', now);
+                window.close();
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <h3> 공지사항 !!</h3>
+    <h4> 공지내용 입니다..</h4>
+    <hr>
+    2분동안 보지 않기<input type="checkbox" name="myPop" id="check">
+    <button id="btn" onclick="fn_check()">닫기</button>
+</body>
+
+</html>
