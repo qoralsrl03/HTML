@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.4.js"></script>
+    <title>Document</title>
+    <script>
+        $('*').ready(function () {
+            $('#btn').click(function () {
+                alert($("#target").val());
+                $('#p_id').html('<span id=\'target2\'>' + $("#target").val() + '</span>'); // html자체로 불러오면 문장이 append/prepend랑 다르게 통째로 바뀜
+                // 즉 html요소를 새로 가져온다는 의미
+            })
+            $('#btn_append').click(function () {
+                $('#p_id').append('<span>' + $("#target").val() + '</span>'); //append = 문장을 뒤에 붙임, 클릭할 때마다 p태그 내부에 생성됨
+            })
+            $('#btn_prepend').click(function () {
+                $('#p_id').prepend('<span>' + $("#target").val() + '</span>'); //prepend = 문장을 앞에 붙임, append와 생성로직은 동일
+            })
+        })
+        // 동적으로 생성된 엘리먼트에 이벤트 적용하려면 on 사용
+        $('*').on('click', 'span', function () {
+            $(this).remove();
+        })
+    </script>
+</head>
+
+<body>
+    이름 : <input type="text" id="target"><br>
+    <button id="btn">Get</button>
+    <button id="btn_append">append</button>
+    <button id="btn_prepend">prepend</button>
+    <p id="p_id"></p>
+    <span>hi span</span>
+
+</body>
+
+</html>
