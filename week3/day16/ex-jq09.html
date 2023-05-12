@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.4.js"></script>
+    <title>Document</title>
+    <script>
+        $(document).ready(function () {
+            $('button').click(function () {
+                $.ajax({
+                    url: "https://api.upbit.com/v1/market/all"
+                    , dataType: "json"
+                    , success: function (res) { // res는 임의적으로 선언한 리턴받는 변수
+                        console.log(res);
+                        for(let i in res){
+                            console.log(res[i]);
+                        }
+                    }
+                    , err: function (e) { // 오류 메시지 출력
+                        console.log(e);
+                    }
+                    , complete: function () { // 종료시 메시지 출력, 무조건 거치는 부분
+                        console.log('종료');
+                    }
+                })
+            })
+        })
+    </script>
+</head>
+
+<body>
+    <button>get data</button>
+</body>
+
+</html>

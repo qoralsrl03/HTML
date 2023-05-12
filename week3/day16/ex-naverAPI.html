@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.4.js"></script>
+    <title>Document</title>
+    <script>
+        $(document).ready(function () {
+            $('button').click(function () {
+                $.ajax({
+                    url: "https://openapi.naver.com/v1/search/shop.json"
+                    , headers: {  'Host': 'openapi.naver.com' }
+                    , dataType: "json"
+                    , data: { 'query': $('#q').val() }
+                    , type: 'GET'
+                    , success: function (res) { // res는 임의적으로 선언한 리턴받는 변수
+                        console.log(res);
+                        $('#contents').empty(); //비우기
+                        let dataset = res['documents']; //res는 api를통한 검색결과의 내용을 담고있고, 그 안에는 document와 meta가 있음 그 중에 document만 불러옴
+                        if (dataset.length == 0) {
+                            $('#contents').append('<p>조회 결과 없음</p>');
+                        } else {
+                            for (let i in dataset) {
+                                $('#contents').append('<p><span>' + dataset[i]['address']['address_name']
+                                    + '</span><span>x:' + dataset[i]['x']
+                                    + '</span><span>y:' + dataset[i]['y'] + '</span></p>');
+                            }
+                            console.log(res);
+                        }
+                    }
+                    , err: function (e) { // 오류 메시지 출력
+                        console.log(e);
+                    }
+                    , complete: function () { // 종료시 메시지 출력, 무조건 거치는 부분
+                        console.log('종료');
+                    }
+                })
+            })
+        })
+    </script>
+</head>
+
+<body>
+    <input type="text" id="q">
+    <button>get data</button>
+    <div id="contents" style="width:500px; height : 500px;">
+
+    </div>
+</body>
+
+</html>
