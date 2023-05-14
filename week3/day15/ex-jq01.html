@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.4.js">//이거 없으면 jQuery 사용 불가능함, 온라인의 jQuery 코딩을 가져와서 쓰는중</script>
+    <script>
+        /* jQuery의 $는 이름이 $인 객체
+           jQuery는 document element를 선택하여 작업하기 때문에
+           window onload 상태에 작동되도록 코드를 작성(아래와 같이)
+        */
+        //jQuery 기본 사용법1
+        $(document).ready(function () {
+            $("h2").click(function () {
+                $(this).hide(); // 안보임
+            });
+            $("input").focus(function(){
+                $(this).css('background-color', 'yellow');
+            });
+            $("input").blur(function(){
+                $(this).css('background-color', 'white');
+            })
+            $("*").mousemove(function(e){
+                $("#log").text("e.pageX:" + e.pageX + "e.pageY:" + e.pageY);  
+            })
+        })
+        //jQuery 기본 사용법 2(사용법 1과 동일한 내용임)
+        $(function () {
+
+        });
+    </script>
+    <title>jquery</title>
+</head>
+
+<body>
+    <h2>클릭하면 사라집니다.</h2>
+    아이디 : <input type="text" id = '1'>
+    패스워드 : <input type="text" id = '2'>
+    <p id = "log"></p>
+</body>
+
+</html>

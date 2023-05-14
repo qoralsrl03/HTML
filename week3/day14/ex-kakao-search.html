@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kakao daum 검색</title>
+    <script>
+        let url = "https://dapi.kakao.com/v2/search/web?sort=accuracy&page=1&size=10&query=";
+        let headers = { "Authorization": "KakaoAK fcf3bd5c859f7c06728859d421b3e6c9" }; // rest api key
+        let httpRequest = new XMLHttpRequest();
+
+        function fn_ajax() {
+            // 검색 클릭시 함수 호출되도록
+            let p = document.getElementById('p').value;
+            httpRequest.onreadystatechange = function () {
+                if (httpRequest.readyState == 4 & httpRequest.status == 200) {
+                    console.log(httpRequest.responseText);
+                }
+            }
+
+            httpRequest.open('GET', url+p);
+            httpRequest.setRequestHeader("Content-Type", "application/json");
+            httpRequest.setRequestHeader("Authorization", "KakaoAK fcf3bd5c859f7c06728859d421b3e6c9");
+            httpRequest.send();
+
+            // console.log(httpRequest.responseText);
+            // let obj = JSON.parse(httpRequest.responseText);
+            // console.log(obj);
+            // let arr= obj.document;
+            // let str = "";
+            // for(let i in arr){
+            //     console.log(arr[i]['contents'])
+            // }
+        }
+
+
+    </script>
+</head>
+
+<body>
+    검색어 : <input type="text" id="p"><input type="button" value="검색" onclick="fn_ajax()">
+</body>
+
+</html>

@@ -1,4 +1,5 @@
 ::-webkit-scrollbar {
+<<<<<<< HEAD
     display: none;
   }
   
@@ -177,3 +178,98 @@
     }
   }
   
+=======
+  display: none;
+}
+
+.root {
+  overflow: hidden;
+  height: 4000px;
+}
+
+.global-nav-main {
+  background-color: black;
+  z-index: 1;
+  display: flex;
+  /* flexbox 사용 */
+  align-items: center;
+  /* 상하 중앙 정렬 */
+  position: fixed;
+  top: 0;
+  /* width: 100% */
+  left: 0;
+  right: 0;
+}
+
+
+.global-nav-main h1 {
+  color: white;
+  display: flex;
+}
+
+.global-nav-main h3 {
+  color: white;
+  margin: auto;
+  font-family: 'Poltawski Nowy', serif;
+  text-align: center;
+}
+
+.global-nav-login {
+  background-color: transparent;
+  z-index: 2;
+  display: flex;
+  clear: both;
+}
+
+.global-nav-logo {
+  background-color: rgb(78, 69, 69);
+  z-index: 2;
+  display: flex;
+  clear: both;
+  justify-content: center;
+  align-items: center;
+}
+
+#logo {
+  height: 70px;
+  width: auto;
+}
+
+.GC-1 {
+  position: relative;
+  width: 100%;
+  height: 1000px;
+  background-color: rgb(0, 0, 0);
+}
+
+.GC-1 img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.GC-1-TEXT{
+  position: absolute;
+  top: 30%;
+  left: 5%;
+  z-index: 1;
+  color: white;
+  opacity: 0;
+  animation-name: fadeIn;
+  animation-duration: 2s;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+    background-repeat: no-repeat;
+  }
+}
+>>>>>>> 11af02e4a34d337feb0d83a3db1e8aa3b642064e

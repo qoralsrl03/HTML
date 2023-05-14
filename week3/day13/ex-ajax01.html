@@ -13,9 +13,6 @@
     -->
 </head>
 <script>
-    function fn_show(){
-        alert("hi");
-    }
 
     let v_ajax = new XMLHttpRequest();
     function fn_get() {
@@ -37,7 +34,7 @@
             let str;
             str = "<tr><th>한글명</th><th>영문명</th><th>코드</th></tr>"
             for (let i in upbit_code_list) {
-                str += "<tr>";
+                str += "<tr onclick = fn_click('"+ upbit_code_list[i].market +"')>";
                 str += "<td>" + upbit_code_list[i]['korean_name'] + "</td>";
                 str += "<td>" + upbit_code_list[i]['english_name'] + "</td>";
                 str += "<td onclick = \"fn_show()\">" + upbit_code_list[i]['market'] + "</td>";
@@ -45,6 +42,17 @@
             }
             document.getElementById('coin_list').innerHTML = str;
         }
+    }
+
+    window.onload = function(){
+        // let table = document.getElementById('coin_list');
+        // table.onclick = function(e){
+        //     let coincode=e.target.parentElement.children[2];
+        //     alert(coincode.innerHTML);
+        // }
+    }
+    function fn_click(code){
+        alert(code);
     }
 </script>
 
