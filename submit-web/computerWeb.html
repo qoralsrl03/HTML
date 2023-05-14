@@ -55,9 +55,9 @@
             </div>
         </div>
         <div>
-
+            11
         </div>
-        <div class="GC-2" id="GC-second">
+        <div class="GC-2 GC-2-appear" id="GC-second">
             <img src="./화면구현사진모음/사이버펑크2.png" id="GC-2-1">
             <img src="./화면구현사진모음/사이버펑크.jpg" id="GC-2-2">
             <div class="GC-2-TEXT">
@@ -95,9 +95,12 @@
             if (scrollY <= scrollTriggerPoint2 && !isShown2) {
                 GC2Text.classList.add('fadeOut2');
                 isShown2 = true;
-            } else if (scrollY > scrollTriggerPoint2 && isShown2) {
+            } else if (scrollY<1300 && scrollY > scrollTriggerPoint2 && isShown2) {
                 GC2Text.classList.remove('fadeOut2');
                 isShown2 = false;
+            } else if(scrollY > 1300){
+                GC2Text.classList.add('fadeOut2');
+                isShown2 = true;
             }
         });
     </script>
