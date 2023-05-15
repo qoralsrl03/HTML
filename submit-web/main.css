@@ -1,196 +1,281 @@
 ::-webkit-scrollbar {
-    display: none;
-  }
-  
-  .root {
-    overflow: hidden;
-    height: 3000px;
-  }
-  
-  a{
-    color: black; /* 링크의 색상을 변경합니다. */
-    text-decoration: none /* 밑줄 표시를 제거합니다. */ !important;
+  display: none;
+}
 
-  }
+.root {
+  overflow: hidden;
+  height: 2300px;
+}
 
-  .global-nav-main {
-    height: 70px;
-    background-color: black;
-    z-index: 9999;
-    display: flex;
-    /* flexbox 사용 */
-    align-items: center;
-    /* 상하 중앙 정렬 */
-    position: fixed;
-    top: 0;
-    /* width: 100% */
-    left: 0;
-    right: 0;
-  }
-  
-  
-  .global-nav-main h1 {
-    color: white;
-    display: flex;
-  }
-  
-  .global-nav-main h3 {
-    color: white;
-    margin: auto;
-    font-family: 'Poltawski Nowy', serif;
-    text-align: center;
-  }
-  
-  .global-nav-login {
-    background-color: transparent;
-    z-index: 2;
-    display: flex;
-    clear: both;
-  }
-  
-  .global-nav-logo {
-    background-color: rgb(78, 69, 69);
-    z-index: 2;
-    display: flex;
-    clear: both;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  #logo {
-    height: 70px;
-    width: auto;
-  }
-  
-  .GC-1 {
-    position: relative;
-    width: 100%;
-    height: 1000px;
-    background-color: rgb(0, 0, 0);
-  }
-  
-  .GC-1 img {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-25%, -50%); /*요소를 수평 및 수직 이동(왼쪽,위쪽)*/
-    width: 70%;
-    height: 100%;
-    object-fit: cover;
-    animation-name: fadeIn;
-    animation-duration: 3s;
-    animation-fill-mode: forwards;
-  }
-  
-  .GC-1-TEXT{
-    position: absolute;
-    top: 30%;
-    left: 3%;
-    z-index: 1;
-    color: white;
+a {
+  color: white
+    /* 링크의 색상을 변경합니다. */
+    !important;
+  text-decoration: none
+    /* 밑줄 표시를 제거합니다. */
+    !important;
+}
+
+a:hover{
+  color: greenyellow !important;
+}
+
+.global-nav-main {
+  height: 70px;
+  background-color: black;
+  z-index: 9999;
+  display: flex;
+  /* flexbox 사용 */
+  align-items: center;
+  /* 상하 중앙 정렬 */
+  position: fixed;
+  top: 0;
+  /* width: 100% */
+  left: 0;
+  right: 0;
+}
+
+
+.global-nav-main h1 {
+  color: white;
+  display: flex;
+}
+
+.global-nav-main h3 {
+  color: white;
+  margin: auto;
+  font-family: 'Poltawski Nowy', serif;
+  text-align: center;
+}
+
+.global-nav-login {
+  background-color: transparent;
+  z-index: 2;
+  display: flex;
+  clear: both;
+}
+
+.global-nav-logo {
+  background-color: rgb(78, 69, 69);
+  z-index: 2;
+  display: flex;
+  clear: both;
+  justify-content: center;
+  align-items: center;
+}
+
+#logo {
+  height: 70px;
+  width: auto;
+}
+
+.GC-1 {
+  position: relative;
+  width: 100%;
+  height: 1000px;
+  background-color: rgb(0, 0, 0);
+}
+.RAM-1 {
+  position: relative;
+  width: 100%;
+  height: 1000px;
+  background-color: rgb(0, 0, 0);
+}
+
+.GC-1 img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-25%, -50%);
+  /*요소를 수평 및 수직 이동(왼쪽,위쪽)*/
+  width: 70%;
+  height: 100%;
+  object-fit: cover;
+  animation-name: fadeIn;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+}
+
+.RAM-1 img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(0%, -50%);
+  /*요소를 수평 및 수직 이동(왼쪽,위쪽)*/
+  width: 45%;
+  height: auto;
+  object-fit: cover;
+  animation-name: fadeIn;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+}
+
+.GC-1-TEXT {
+  position: absolute;
+  top: 30%;
+  left: 3%;
+  z-index: 1;
+  color: white;
+  opacity: 0;
+  animation-name: fadeIn;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+}
+
+.RAM-1-TEXT {
+  position: absolute;
+  top: 30%;
+  left: 10%;
+  z-index: 1;
+  color: white;
+  opacity: 0;
+  animation-name: fadeIn;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+}
+
+.fadeOut {
+  animation-name: fadeOut;
+  animation-duration: 0s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeIn {
+
+  /*애니메이션을 생성해서 시작과 끝이 어떻게 진행될지를 정할 수 있는 기능*/
+  from {
     opacity: 0;
-    animation-name: fadeIn;
-    animation-duration: 3s;
-    animation-fill-mode: forwards;
-  }
-  
-  .fadeOut {
-    animation-name: fadeOut;
-    animation-duration: 0s;
-    animation-fill-mode: forwards;
-  }
-  
-  @keyframes fadeIn { /*애니메이션을 생성해서 시작과 끝이 어떻게 진행될지를 정할 수 있는 기능*/
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
   }
 
-  @keyframes fadeOut {
-    from {
-      opacity: 1;
-    }
-    to {
-      opacity: 0;
-    }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
   }
 
-  .GC-2{
-    position: relative;
-    width: 100%;
-    height: 1000px;
-    background-color: rgb(0, 0, 0);
-  }
-
-  .GC-2 img {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-90%, -75%); /*요소를 수평 및 수직 이동(왼쪽,위쪽)*/
-    width: 50%;
-    height: 50%;
-    object-fit: cover;
-    z-index: 2;
-  }
-
-  .GC-2 #GC-2-1{
-    transform: translate(-50%, -15%);
-    z-index: 3;
-  }
-
-  .GC-2-TEXT{
-    position: absolute;
-    top: 20%;
-    left: 60%;
-    z-index: 10;
-    color: white;
+  to {
     opacity: 0;
-    animation-name: fadeIn2;
-    animation-duration: 3s;
-    animation-fill-mode: forwards;
+  }
+}
+
+.GC-2 {
+  position: relative;
+  width: 100%;
+  height: 1000px;
+  background-color: rgb(0, 0, 0);
+}
+
+.GC-2 img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-90%, -75%);
+  /*요소를 수평 및 수직 이동(왼쪽,위쪽)*/
+  width: 50%;
+  height: 50%;
+  object-fit: cover;
+  z-index: 2;
+}
+
+.GC-2 #GC-2-1 {
+  transform: translate(-50%, -15%);
+  z-index: 3;
+}
+
+.GC-2-TEXT {
+  position: absolute;
+  top: 20%;
+  left: 60%;
+  z-index: 10;
+  color: white;
+  opacity: 0;
+  animation-name: fadeIn2;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+}
+
+.fadeOut2 {
+  animation-name: fadeOut2;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeIn2 {
+
+  /*애니메이션을 생성해서 시작과 끝이 어떻게 진행될지를 정할 수 있는 기능*/
+  from {
+    opacity: 0;
   }
 
-  .fadeOut2 {
-    animation-name: fadeOut2;
-    animation-duration: 3s;
-    animation-fill-mode: forwards;
+  to {
+    opacity: 1;
   }
-  
-  @keyframes fadeIn2 { /*애니메이션을 생성해서 시작과 끝이 어떻게 진행될지를 정할 수 있는 기능*/
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
+}
+
+@keyframes fadeOut2 {
+  from {
+    opacity: 1;
   }
 
-  @keyframes fadeOut2 {
-    from {
-      opacity: 1;
-    }
-    to {
-      opacity: 0;
-    }
+  to {
+    opacity: 0;
   }
-  
-  #banner {
-    position: relative;
-    overflow: hidden;
-    width: 100%;
-    height: 50px;
-    border: 1px solid #ccc;
-    background-color: rgb(200, 218, 144);
-  }
-  #text {
-    position: absolute;
-    white-space: nowrap;
-    font-size: 24px;
-    font-weight: bold;
-    color: black;
-    top: 50%;
-    transform: translateY(-50%);
-  }
+}
+
+#banner {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 50px;
+  background-color: rgb(57, 63, 55);
+}
+
+#text {
+  position: absolute;
+  white-space: nowrap;
+  font-size: 24px;
+  font-weight: bold;
+  color: yellowgreen;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+footer {
+  background-color: #191212;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 40px 60px;
+  height: 400px;
+}
+
+.footer-menu {
+  flex-basis: 25%;
+}
+
+.footer-menu h3 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: rgb(134, 212, 162);
+}
+
+.footer-menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.footer-menu ul li {
+  margin-bottom: 10px;
+}
+
+.footer-menu ul li a {
+  color: #c6bcbc;
+  text-decoration: none;
+}
+
