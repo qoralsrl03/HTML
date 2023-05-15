@@ -22,11 +22,11 @@
             <div class="global-nav-main col-12 d-flex">
                 <div class="global-nav-GC col-md-2">
                     <h3>
-                        <a href="#GC-first">GraphicCard</a>
+                        <a href="./computerWeb.html#GC-first">GraphicCard</a>
                     </h3>
                 </div>
                 <div class="global-nav-ram col-md-1">
-                    <h3><a href='./RAM.html'>RAM</a></h3>
+                    <h3><a href='./RAM.html#RAM-first'>RAM</a></h3>
                 </div>
                 <div class="global-nav-cpu col-md-1">
                     <h3><a href=#>CPU</a></h3>
@@ -47,7 +47,7 @@
                 </div>
             </div>
         </div>
-        <div class="RAM-1">
+        <div class="RAM-1" id="RAM-first">
             <img src="./화면구현사진모음/램사진.webp">
             <div class="RAM-1-TEXT">
                 <h2>누구도 따라올 수 없는 스피드</h2>
@@ -56,7 +56,11 @@
                 <br>
                 <!--본문 내용-->
                 <h4>
-                    ㅗㅑ
+                    램은 운동화가 되어줄것입니다.<hr>
+                    닳고 닳은 운동화보다<hr>
+                    새로운 운동화를 장만하여<hr>
+                    광활한 사이버 세계를<hr>
+                    빠른 속도로 누벼보세요!
                 </h4>
             </div>
         </div>
@@ -98,7 +102,7 @@
         </div>
     </div>
     <script>
-        const GC1Text = document.querySelector('.GC-1-TEXT');
+        const GC1Text = document.querySelector('.RAM-1-TEXT');
         const scrollTriggerPoint = 300; // 스크롤 트리거 포인트
         let isShown = false;
 
@@ -115,7 +119,7 @@
         });
 
         // GC-2-TEXT 애니메이션 제어
-        const GC2Text = document.querySelector('.GC-2-TEXT');
+        const GC2Text = document.querySelector('.RAM-2-TEXT');
         const scrollTriggerPoint2 = 600; // 스크롤 트리거 포인트
         let isShown2 = false;
 
@@ -134,24 +138,6 @@
             }
         });
 
-        // 중간 광고 배너 구현
-        var banner = document.getElementById('banner');
-        var text = document.getElementById('text');
-        var bannerWidth = banner.offsetWidth;
-        var textWidth = text.offsetWidth;
-
-        text.style.left = bannerWidth + 'px';
-
-        function animate() {
-            bannerWidth = bannerWidth - 3;
-            if (bannerWidth < -textWidth) {
-                bannerWidth = banner.offsetWidth;
-            }
-            text.style.left = bannerWidth + 'px';
-            requestAnimationFrame(animate);
-        }
-
-        animate();
     </script>
 </body>
 
