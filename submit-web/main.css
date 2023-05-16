@@ -16,7 +16,7 @@ a {
     !important;
 }
 
-a:hover{
+a:hover {
   color: greenyellow !important;
 }
 
@@ -69,13 +69,8 @@ a:hover{
   width: auto;
 }
 
-.GC-1 {
-  position: relative;
-  width: 100%;
-  height: 1000px;
-  background-color: rgb(0, 0, 0);
-}
-.RAM-1 {
+
+.div-1 {
   position: relative;
   width: 100%;
   height: 1000px;
@@ -97,12 +92,43 @@ a:hover{
 }
 
 .RAM-1 img {
+  top: 5%;
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(0%, -50%);
+  transform: translate(0%, -40%);
   /*요소를 수평 및 수직 이동(왼쪽,위쪽)*/
   width: 45%;
+  height: auto;
+  object-fit: cover;
+  animation-name: fadeIn;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+}
+
+.CPU-1 img {
+  top: 5%;
+  position: absolute;
+  top: 30%;
+  left: 60%;
+  transform: translate(0%, -20%);
+  /*요소를 수평 및 수직 이동(왼쪽,위쪽)*/
+  width: 30%;
+  height: auto;
+  object-fit: cover;
+  animation-name: fadeIn;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+}
+
+.Mainboard-1 img {
+  top: 5%;
+  position: absolute;
+  top: 30%;
+  left: 60%;
+  transform: translate(0%, -20%);
+  /*요소를 수평 및 수직 이동(왼쪽,위쪽)*/
+  width: 30%;
   height: auto;
   object-fit: cover;
   animation-name: fadeIn;
@@ -124,7 +150,7 @@ a:hover{
 
 .RAM-1-TEXT {
   position: absolute;
-  top: 30%;
+  top: 15%;
   left: 10%;
   z-index: 1;
   color: white;
@@ -132,6 +158,54 @@ a:hover{
   animation-name: fadeIn;
   animation-duration: 3s;
   animation-fill-mode: forwards;
+}
+
+.CPU-1-TEXT {
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  z-index: 1;
+  color: white;
+  opacity: 0;
+  animation-name: fadeIn;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+}
+
+.Mainboard-1-TEXT {
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  z-index: 1;
+  color: white;
+  opacity: 0;
+  animation-name: fadeIn;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+}
+
+.RAM-1-TEXT img {
+  position: absolute;
+  width: 200%;
+  height: auto;
+  left: -30%;
+  top: 300%;
+}
+
+.CPU-1-TEXT img {
+  position: absolute;
+  width: 200%;
+  height: auto;
+  left: -20%;
+  top: 180%;
+}
+
+.Mainboard-1-TEXT img {
+  position: absolute;
+  width: 110%;
+  height: auto;
+  left: 0%;
+  top: 180%;
 }
 
 .fadeOut {
@@ -162,12 +236,13 @@ a:hover{
   }
 }
 
-.GC-2 {
+.div-2 {
   position: relative;
   width: 100%;
   height: 1000px;
   background-color: rgb(0, 0, 0);
 }
+
 
 .GC-2 img {
   position: absolute;
@@ -181,12 +256,84 @@ a:hover{
   z-index: 2;
 }
 
+.RAM-2 img {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-90%, -75%);
+  /*요소를 수평 및 수직 이동(왼쪽,위쪽)*/
+  width: 50%;
+  height: 50%;
+  object-fit: cover;
+  z-index: 2;
+}
+
+.CPU-2 img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-100%, -50%);
+  /*요소를 수평 및 수직 이동(왼쪽,위쪽)*/
+  width: 45%;
+  height: auto;
+  object-fit: cover;
+  z-index: 2;
+}
+
+.Mainboard-2 img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-100%, -50%);
+  /*요소를 수평 및 수직 이동(왼쪽,위쪽)*/
+  width: 45%;
+  height: auto;
+  object-fit: cover;
+  z-index: 2;
+}
+
 .GC-2 #GC-2-1 {
   transform: translate(-50%, -15%);
   z-index: 3;
 }
 
 .GC-2-TEXT {
+  position: absolute;
+  top: 20%;
+  left: 60%;
+  z-index: 10;
+  color: white;
+  opacity: 0;
+  animation-name: fadeIn2;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+}
+
+.RAM-2-TEXT {
+  position: absolute;
+  top: 20%;
+  left: 60%;
+  z-index: 10;
+  color: white;
+  opacity: 0;
+  animation-name: fadeIn2;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+}
+
+.CPU-2-TEXT {
+  position: absolute;
+  top: 10%;
+  left: 60%;
+  z-index: 10;
+  color: white;
+  opacity: 0;
+  animation-name: fadeIn2;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+}
+
+.Mainboard-2-TEXT {
   position: absolute;
   top: 20%;
   left: 60%;
@@ -278,4 +425,3 @@ footer {
   color: #c6bcbc;
   text-decoration: none;
 }
-

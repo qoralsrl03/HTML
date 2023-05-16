@@ -48,43 +48,48 @@
             </div>
         </div>
         <div class="div-1">
-            <div class="GC-1" id="GC-first">
-                <img src="./화면구현사진모음/그래픽배경.jpg">
-                <div class="GC-1-TEXT">
-                    <h2>현실과 같은 허상</h2>
-                    <h2>그 이상을 향하는 그래픽카드</h2>
-                    <hr>
-                    <h4>NVIDIA® GeForce RTX™ 4090은 궁극의 GeForce GPU입니다.
-                        <hr>
-                        이는 성능, 효율성, 그리고 AI 기반 그래픽에서 엄청난 도약을 보여줍니다.
-                        <hr>
-                        초고성능 게이밍, 믿을 수 없을 정도로 상세한 가상 세계, 전례 없는 생산성 및 새로운 제작 방법을 경험하세요.
-                        <hr>
-                        NVIDIA Ada Lovelace 아키텍처를 기반으로 게이머와 크리에이터 모두에게 궁극의 경험을 선사하기 위한 24GB G6X 메모리를 갖췄습니다.
-                    </h4>
+            <div class="CPU-1" id="CPU-first">
+                <img src="./화면구현사진모음/CPU사진.png">
+                <div class="CPU-1-TEXT">
+                    <h2>세계 최초 6.0GHz의 속도</h2>
+                    <h2>상상 이상의 성능 [인텔 i9-13900KS]</h2>
+                    <br>
+                    <br>
+                    <!--본문 내용-->
+                    <img src="./화면구현사진모음/CPU스펙.png">
                 </div>
             </div>
         </div>
-        <div id="banner">
-            <p id="text">
-                민기의 생일은 8월 26일 (국민은행)945802-00-02......
-            </p>
-        </div>
         <div class="div-2">
-            <div class="GC-2 GC-2-appear" id="GC-second">
-                <img src="./화면구현사진모음/사이버펑크2.png" id="GC-2-1">
-                <img src="./화면구현사진모음/사이버펑크.jpg" id="GC-2-2">
-                <div class="GC-2-TEXT">
-                    <h2>내 인생의 또 다른 즐거움</h2>
-                    <h2>방안에서 펼쳐지는 또 다른 세계!</h2>
+            <div class="CPU-2" id="CPU-second">
+                <img src="./화면구현사진모음/CPU사진2.png">
+                <div class="CPU-2-TEXT">
+                    <h2>컴퓨터의 두뇌 CPU</h2>
+                    <h2>CPU는 무엇이고 어떤 동작을 할까?</h2>
                     <br>
-                    <hr>
-                    <h4>그래픽 카드의 기능은 그래픽 정보를 컴퓨팅하는 방법을 간단히 제공하여</h4>
-                    <hr>
-                    <h4> 평면 패널 LCD 모니터와 같은 디스플레이로 릴레이하는 것입니다.</h4>
-                    <hr>
-                    <h4>컴퓨터에서 이미지, 비디오, 게임 등의 그래픽 요소를 생성하고<br>
-                        표시하기 위해 그래픽 카드가 필요합니다.</h4>
+                    <br>
+                    <h4>
+                        CPU는 3가지의 동작을 수행합니다.
+                        <hr>
+                        1. 데이터 가져오기(Fetch) :
+                        <hr>
+                        - 데이터를 RAM으로부터 가져와 프로그램 카운터(PC)에 데이터(명령어)를 보관
+                        <hr>
+                        2. 디코딩(Decoding) :
+                        <hr>
+                        - 명령을 가져와서 명령 해독기라는 회로로 명령을 전달
+                        <hr>
+                        3. 실행(Execute) :
+                        <hr>
+                        - 마지막 단계에서 디코딩된 명령문은 완료될 CPU의 관련 부분으로 전송
+                        <hr>
+                        <br>
+                        그렇기에 램을 구매시에는 빠르게 램을 읽어와 전달 할 수 있는지의 계산 척도인
+                        <hr>
+                        CPU 성능 = (클럭 * IPC) * 코어 수를 기억하여
+                        <hr>
+                        클럭, IPC, 코어 수가 많은 램을 구매하면 됩니다.
+                    </h4>
                 </div>
             </div>
         </div>
@@ -125,7 +130,7 @@
         </div>
     </div>
     <script>
-        const GC1Text = document.querySelector('.GC-1-TEXT');
+        const GC1Text = document.querySelector('.CPU-1-TEXT');
         const scrollTriggerPoint = 300; // 스크롤 트리거 포인트
         let isShown = false;
 
@@ -141,8 +146,8 @@
             }
         });
 
-        // 애니메이션 제어
-        const GC2Text = document.querySelector('.GC-2-TEXT');
+        // GC-2-TEXT 애니메이션 제어
+        const GC2Text = document.querySelector('.CPU-2-TEXT');
         const scrollTriggerPoint2 = 600; // 스크롤 트리거 포인트
         let isShown2 = false;
 
@@ -161,25 +166,5 @@
             }
         });
 
-        // 중간 광고 배너 구현
-        var banner = document.getElementById('banner');
-        var text = document.getElementById('text');
-        var bannerWidth = banner.offsetWidth;
-        var textWidth = text.offsetWidth;
-
-        text.style.left = bannerWidth + 'px';
-
-        function animate() {
-            bannerWidth = bannerWidth - 3;
-            if (bannerWidth < -textWidth) {
-                bannerWidth = banner.offsetWidth;
-            }
-            text.style.left = bannerWidth + 'px';
-            requestAnimationFrame(animate);
-        }
-
-        animate();
     </script>
 </body>
-
-</html>
