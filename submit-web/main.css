@@ -95,10 +95,10 @@ a:hover {
   top: 5%;
   position: absolute;
   top: 50%;
-  left: 50%;
+  left: 55%;
   transform: translate(0%, -40%);
   /*요소를 수평 및 수직 이동(왼쪽,위쪽)*/
-  width: 45%;
+  width: 40%;
   height: auto;
   object-fit: cover;
   animation-name: fadeIn;
@@ -202,7 +202,7 @@ a:hover {
 
 .Mainboard-1-TEXT img {
   position: absolute;
-  width: 110%;
+  width: 90%;
   height: auto;
   left: 0%;
   top: 180%;
@@ -336,7 +336,7 @@ a:hover {
 .Mainboard-2-TEXT {
   position: absolute;
   top: 20%;
-  left: 60%;
+  left: 55%;
   z-index: 10;
   color: white;
   opacity: 0;
@@ -347,7 +347,7 @@ a:hover {
 
 .fadeOut2 {
   animation-name: fadeOut2;
-  animation-duration: 3s;
+  animation-duration: 1s;
   animation-fill-mode: forwards;
 }
 
