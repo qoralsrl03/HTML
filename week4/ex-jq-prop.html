@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.4.js"></script>
+    <title>attr & prop</title>
+    <script>
+        $(document).ready(function () {
+            $('#btn1').click(function () {
+                // attr & prop 속성을 가져오거나 설정하는데 사용
+                // attr 페이지가 처음 로드될 때 요소가 가지고 있던 속성 값 반환
+                // prop 현재 속성 값을 반환
+                console.log($('input[name=item2]').attr('checked')); //메서드는 HTML 요소의 속성(attribute) 값을 가져오거나 설정할 때 사용됩니다. 예를 들어, attr('src')는 이미지 요소의 src 속성 값을 가져옴
+                console.log($('input[name=item2]').prop('checked')); //예를 들어, prop('checked')는 체크박스 요소의 checked 속성 값을 가져옴
+                console.log($('input[name=item2]').is(':checked'));//현재 상태값을 가져옴(ex. 만약 체크가 되어있다면 true, 아니면 false)
+                // each문은 object, array 모두 사용 할 수 있는 반복 함수.
+                // $.each(obj, function(index, value){});
+                // $(obj).each(function(index, value){});
+                $('input[name=item2]').each(function (i, v) {//i=인덱스, v=보유 갯수, 3개 있으면 i가 3까지 증가하면서 돔
+                    console.log(i);
+                    console.log($(v));
+                    if ($(v).is(":checked")) {
+                        console.log($(v).val());
+                        console.log($(v).prop('checked'));
+                        console.log(i, "번째 radio가 checked true");
+                    }
+                });
+                $('input[type=text]').each(function(i,v){
+                    console.log($(v).val());
+                });
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <label for="radio1">사이즈 : S</label><input type="radio" name="item2" values="S" checked>
+    <label for="radio2">M</label><input type="radio" name="item2" values="M">
+    <label for="radio3">L</label><input type="radio" name="item2" values="L"><br>
+    <label for="">요청사항</label><input type="text" name="msg"><br>
+    <button id="btn1" type="button">체크</button>
+    <input type="text">
+    <input type="text">
+    <input type="text">
+</body>
+
+</html>
