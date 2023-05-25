@@ -1,0 +1,744 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/node', '/usr/bin/npm', 'install', 'oracledb' ]
+2 info using npm@3.5.2
+3 info using node@v8.10.0
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readLocalPackageData
+7 silly fetchPackageMetaData oracledb
+8 silly fetchNamedPackageData oracledb
+9 silly mapToRegistry name oracledb
+10 silly mapToRegistry using default registry
+11 silly mapToRegistry registry https://registry.npmjs.org/
+12 silly mapToRegistry uri https://registry.npmjs.org/oracledb
+13 verbose request uri https://registry.npmjs.org/oracledb
+14 verbose request no auth needed
+15 info attempt registry request try #1 at 오후 2:47:25
+16 verbose request id fbee73486202fff9
+17 verbose etag W/"dc26af682d8720fd58b09c41f90e2d3e"
+18 verbose lastModified Wed, 24 May 2023 09:40:19 GMT
+19 http request GET https://registry.npmjs.org/oracledb
+20 http 304 https://registry.npmjs.org/oracledb
+21 verbose headers { date: 'Thu, 25 May 2023 05:47:26 GMT',
+21 verbose headers   connection: 'keep-alive',
+21 verbose headers   'cf-ray': '7ccb7bcfaf8ba7e1-ICN',
+21 verbose headers   'cf-cache-status': 'REVALIDATED',
+21 verbose headers   'cache-control': 'public, max-age=300',
+21 verbose headers   etag: '"dc26af682d8720fd58b09c41f90e2d3e"',
+21 verbose headers   'last-modified': 'Wed, 24 May 2023 09:40:19 GMT',
+21 verbose headers   vary: 'Accept-Encoding',
+21 verbose headers   'x-amz-replication-status': 'COMPLETED',
+21 verbose headers   'x-amz-server-side-encryption': 'AES256',
+21 verbose headers   server: 'cloudflare' }
+22 silly get cb [ 304,
+22 silly get   { date: 'Thu, 25 May 2023 05:47:26 GMT',
+22 silly get     connection: 'keep-alive',
+22 silly get     'cf-ray': '7ccb7bcfaf8ba7e1-ICN',
+22 silly get     'cf-cache-status': 'REVALIDATED',
+22 silly get     'cache-control': 'public, max-age=300',
+22 silly get     etag: '"dc26af682d8720fd58b09c41f90e2d3e"',
+22 silly get     'last-modified': 'Wed, 24 May 2023 09:40:19 GMT',
+22 silly get     vary: 'Accept-Encoding',
+22 silly get     'x-amz-replication-status': 'COMPLETED',
+22 silly get     'x-amz-server-side-encryption': 'AES256',
+22 silly get     server: 'cloudflare' } ]
+23 verbose etag https://registry.npmjs.org/oracledb from cache
+24 verbose get saving oracledb to /home/pc06/.npm/registry.npmjs.org/oracledb/.cache.json
+25 silly install normalizeTree
+26 silly loadCurrentTree Finishing
+27 silly loadIdealTree Starting
+28 silly install loadIdealTree
+29 silly cloneCurrentTree Starting
+30 silly install cloneCurrentTreeToIdealTree
+31 silly cloneCurrentTree Finishing
+32 silly loadShrinkwrap Starting
+33 silly install loadShrinkwrap
+34 silly loadShrinkwrap Finishing
+35 silly loadAllDepsIntoIdealTree Starting
+36 silly install loadAllDepsIntoIdealTree
+37 silly resolveWithNewModule oracledb@6.0.0 checking installable status
+38 silly cache add args [ 'oracledb', null ]
+39 verbose cache add spec oracledb
+40 silly cache add parsed spec Result {
+40 silly cache add   raw: 'oracledb',
+40 silly cache add   scope: null,
+40 silly cache add   name: 'oracledb',
+40 silly cache add   rawSpec: '',
+40 silly cache add   spec: 'latest',
+40 silly cache add   type: 'tag' }
+41 silly addNamed oracledb@latest
+42 verbose addNamed "latest" is being treated as a dist-tag for oracledb
+43 info addNameTag [ 'oracledb', 'latest' ]
+44 silly mapToRegistry name oracledb
+45 silly mapToRegistry using default registry
+46 silly mapToRegistry registry https://registry.npmjs.org/
+47 silly mapToRegistry uri https://registry.npmjs.org/oracledb
+48 verbose addNameTag registry:https://registry.npmjs.org/oracledb not in flight; fetching
+49 verbose get https://registry.npmjs.org/oracledb not expired, no request
+50 silly addNameTag next cb for oracledb with tag latest
+51 silly addNamed oracledb@6.0.0
+52 verbose addNamed "6.0.0" is a plain semver version for oracledb
+53 silly cache afterAdd oracledb@6.0.0
+54 verbose afterAdd /home/pc06/.npm/oracledb/6.0.0/package/package.json not in flight; writing
+55 verbose afterAdd /home/pc06/.npm/oracledb/6.0.0/package/package.json written
+56 silly loadAllDepsIntoIdealTree Finishing
+57 silly idealTree:prePrune ex-db@1.0.0
+57 silly idealTree:prePrune ├── accepts@1.3.8
+57 silly idealTree:prePrune ├── ansi-styles@4.3.0
+57 silly idealTree:prePrune ├── array-flatten@1.1.1
+57 silly idealTree:prePrune ├── async@3.2.4
+57 silly idealTree:prePrune ├── balanced-match@1.0.2
+57 silly idealTree:prePrune ├── body-parser@1.20.1
+57 silly idealTree:prePrune ├── brace-expansion@2.0.1
+57 silly idealTree:prePrune ├── bytes@3.1.2
+57 silly idealTree:prePrune ├── call-bind@1.0.2
+57 silly idealTree:prePrune ├── chalk@4.1.2
+57 silly idealTree:prePrune ├── color-convert@2.0.1
+57 silly idealTree:prePrune ├── color-name@1.1.4
+57 silly idealTree:prePrune ├── concat-map@0.0.1
+57 silly idealTree:prePrune ├── content-disposition@0.5.4
+57 silly idealTree:prePrune ├── content-type@1.0.5
+57 silly idealTree:prePrune ├── cookie-signature@1.0.6
+57 silly idealTree:prePrune ├── cookie@0.5.0
+57 silly idealTree:prePrune ├── debug@2.6.9
+57 silly idealTree:prePrune ├── depd@2.0.0
+57 silly idealTree:prePrune ├── destroy@1.2.0
+57 silly idealTree:prePrune ├── ee-first@1.1.1
+57 silly idealTree:prePrune ├── ejs@3.1.9
+57 silly idealTree:prePrune ├── encodeurl@1.0.2
+57 silly idealTree:prePrune ├── escape-html@1.0.3
+57 silly idealTree:prePrune ├── etag@1.8.1
+57 silly idealTree:prePrune ├── express@4.18.2
+57 silly idealTree:prePrune ├─┬ filelist@1.0.4
+57 silly idealTree:prePrune │ └── minimatch@5.1.6
+57 silly idealTree:prePrune ├── finalhandler@1.2.0
+57 silly idealTree:prePrune ├── forwarded@0.2.0
+57 silly idealTree:prePrune ├── fresh@0.5.2
+57 silly idealTree:prePrune ├── function-bind@1.1.1
+57 silly idealTree:prePrune ├── get-intrinsic@1.2.1
+57 silly idealTree:prePrune ├── has-flag@4.0.0
+57 silly idealTree:prePrune ├── has-proto@1.0.1
+57 silly idealTree:prePrune ├── has-symbols@1.0.3
+57 silly idealTree:prePrune ├── has@1.0.3
+57 silly idealTree:prePrune ├── http-errors@2.0.0
+57 silly idealTree:prePrune ├── iconv-lite@0.4.24
+57 silly idealTree:prePrune ├── inherits@2.0.4
+57 silly idealTree:prePrune ├── ipaddr.js@1.9.1
+57 silly idealTree:prePrune ├── jake@10.8.6
+57 silly idealTree:prePrune ├── media-typer@0.3.0
+57 silly idealTree:prePrune ├── merge-descriptors@1.0.1
+57 silly idealTree:prePrune ├── methods@1.1.2
+57 silly idealTree:prePrune ├── mime-db@1.52.0
+57 silly idealTree:prePrune ├── mime-types@2.1.35
+57 silly idealTree:prePrune ├── mime@1.6.0
+57 silly idealTree:prePrune ├─┬ minimatch@3.1.2
+57 silly idealTree:prePrune │ └── brace-expansion@1.1.11
+57 silly idealTree:prePrune ├── ms@2.0.0
+57 silly idealTree:prePrune ├── negotiator@0.6.3
+57 silly idealTree:prePrune ├── object-inspect@1.12.3
+57 silly idealTree:prePrune ├── on-finished@2.4.1
+57 silly idealTree:prePrune ├── oracledb@6.0.0
+57 silly idealTree:prePrune ├── parseurl@1.3.3
+57 silly idealTree:prePrune ├── path-to-regexp@0.1.7
+57 silly idealTree:prePrune ├── proxy-addr@2.0.7
+57 silly idealTree:prePrune ├── qs@6.11.0
+57 silly idealTree:prePrune ├── range-parser@1.2.1
+57 silly idealTree:prePrune ├── raw-body@2.5.1
+57 silly idealTree:prePrune ├── safe-buffer@5.2.1
+57 silly idealTree:prePrune ├── safer-buffer@2.1.2
+57 silly idealTree:prePrune ├─┬ send@0.18.0
+57 silly idealTree:prePrune │ └── ms@2.1.3
+57 silly idealTree:prePrune ├── serve-static@1.15.0
+57 silly idealTree:prePrune ├── setprototypeof@1.2.0
+57 silly idealTree:prePrune ├── side-channel@1.0.4
+57 silly idealTree:prePrune ├── statuses@2.0.1
+57 silly idealTree:prePrune ├── supports-color@7.2.0
+57 silly idealTree:prePrune ├── toidentifier@1.0.1
+57 silly idealTree:prePrune ├── type-is@1.6.18
+57 silly idealTree:prePrune ├── unpipe@1.0.0
+57 silly idealTree:prePrune ├── utils-merge@1.0.1
+57 silly idealTree:prePrune └── vary@1.1.2
+58 silly loadIdealTree Finishing
+59 silly currentTree ex-db@1.0.0
+59 silly currentTree ├── accepts@1.3.8
+59 silly currentTree ├── ansi-styles@4.3.0
+59 silly currentTree ├── array-flatten@1.1.1
+59 silly currentTree ├── async@3.2.4
+59 silly currentTree ├── balanced-match@1.0.2
+59 silly currentTree ├── body-parser@1.20.1
+59 silly currentTree ├── brace-expansion@2.0.1
+59 silly currentTree ├── bytes@3.1.2
+59 silly currentTree ├── call-bind@1.0.2
+59 silly currentTree ├── chalk@4.1.2
+59 silly currentTree ├── color-convert@2.0.1
+59 silly currentTree ├── color-name@1.1.4
+59 silly currentTree ├── concat-map@0.0.1
+59 silly currentTree ├── content-disposition@0.5.4
+59 silly currentTree ├── content-type@1.0.5
+59 silly currentTree ├── cookie-signature@1.0.6
+59 silly currentTree ├── cookie@0.5.0
+59 silly currentTree ├── debug@2.6.9
+59 silly currentTree ├── depd@2.0.0
+59 silly currentTree ├── destroy@1.2.0
+59 silly currentTree ├── ee-first@1.1.1
+59 silly currentTree ├── ejs@3.1.9
+59 silly currentTree ├── encodeurl@1.0.2
+59 silly currentTree ├── escape-html@1.0.3
+59 silly currentTree ├── etag@1.8.1
+59 silly currentTree ├── express@4.18.2
+59 silly currentTree ├─┬ filelist@1.0.4
+59 silly currentTree │ └── minimatch@5.1.6
+59 silly currentTree ├── finalhandler@1.2.0
+59 silly currentTree ├── forwarded@0.2.0
+59 silly currentTree ├── fresh@0.5.2
+59 silly currentTree ├── function-bind@1.1.1
+59 silly currentTree ├── get-intrinsic@1.2.1
+59 silly currentTree ├── has-flag@4.0.0
+59 silly currentTree ├── has-proto@1.0.1
+59 silly currentTree ├── has-symbols@1.0.3
+59 silly currentTree ├── has@1.0.3
+59 silly currentTree ├── http-errors@2.0.0
+59 silly currentTree ├── iconv-lite@0.4.24
+59 silly currentTree ├── inherits@2.0.4
+59 silly currentTree ├── ipaddr.js@1.9.1
+59 silly currentTree ├── jake@10.8.6
+59 silly currentTree ├── media-typer@0.3.0
+59 silly currentTree ├── merge-descriptors@1.0.1
+59 silly currentTree ├── methods@1.1.2
+59 silly currentTree ├── mime-db@1.52.0
+59 silly currentTree ├── mime-types@2.1.35
+59 silly currentTree ├── mime@1.6.0
+59 silly currentTree ├─┬ minimatch@3.1.2
+59 silly currentTree │ └── brace-expansion@1.1.11
+59 silly currentTree ├── ms@2.0.0
+59 silly currentTree ├── negotiator@0.6.3
+59 silly currentTree ├── object-inspect@1.12.3
+59 silly currentTree ├── on-finished@2.4.1
+59 silly currentTree ├── parseurl@1.3.3
+59 silly currentTree ├── path-to-regexp@0.1.7
+59 silly currentTree ├── proxy-addr@2.0.7
+59 silly currentTree ├── qs@6.11.0
+59 silly currentTree ├── range-parser@1.2.1
+59 silly currentTree ├── raw-body@2.5.1
+59 silly currentTree ├── safe-buffer@5.2.1
+59 silly currentTree ├── safer-buffer@2.1.2
+59 silly currentTree ├─┬ send@0.18.0
+59 silly currentTree │ └── ms@2.1.3
+59 silly currentTree ├── serve-static@1.15.0
+59 silly currentTree ├── setprototypeof@1.2.0
+59 silly currentTree ├── side-channel@1.0.4
+59 silly currentTree ├── statuses@2.0.1
+59 silly currentTree ├── supports-color@7.2.0
+59 silly currentTree ├── toidentifier@1.0.1
+59 silly currentTree ├── type-is@1.6.18
+59 silly currentTree ├── unpipe@1.0.0
+59 silly currentTree ├── utils-merge@1.0.1
+59 silly currentTree └── vary@1.1.2
+60 silly idealTree ex-db@1.0.0
+60 silly idealTree ├── accepts@1.3.8
+60 silly idealTree ├── ansi-styles@4.3.0
+60 silly idealTree ├── array-flatten@1.1.1
+60 silly idealTree ├── async@3.2.4
+60 silly idealTree ├── balanced-match@1.0.2
+60 silly idealTree ├── body-parser@1.20.1
+60 silly idealTree ├── brace-expansion@2.0.1
+60 silly idealTree ├── bytes@3.1.2
+60 silly idealTree ├── call-bind@1.0.2
+60 silly idealTree ├── chalk@4.1.2
+60 silly idealTree ├── color-convert@2.0.1
+60 silly idealTree ├── color-name@1.1.4
+60 silly idealTree ├── concat-map@0.0.1
+60 silly idealTree ├── content-disposition@0.5.4
+60 silly idealTree ├── content-type@1.0.5
+60 silly idealTree ├── cookie-signature@1.0.6
+60 silly idealTree ├── cookie@0.5.0
+60 silly idealTree ├── debug@2.6.9
+60 silly idealTree ├── depd@2.0.0
+60 silly idealTree ├── destroy@1.2.0
+60 silly idealTree ├── ee-first@1.1.1
+60 silly idealTree ├── ejs@3.1.9
+60 silly idealTree ├── encodeurl@1.0.2
+60 silly idealTree ├── escape-html@1.0.3
+60 silly idealTree ├── etag@1.8.1
+60 silly idealTree ├── express@4.18.2
+60 silly idealTree ├─┬ filelist@1.0.4
+60 silly idealTree │ └── minimatch@5.1.6
+60 silly idealTree ├── finalhandler@1.2.0
+60 silly idealTree ├── forwarded@0.2.0
+60 silly idealTree ├── fresh@0.5.2
+60 silly idealTree ├── function-bind@1.1.1
+60 silly idealTree ├── get-intrinsic@1.2.1
+60 silly idealTree ├── has-flag@4.0.0
+60 silly idealTree ├── has-proto@1.0.1
+60 silly idealTree ├── has-symbols@1.0.3
+60 silly idealTree ├── has@1.0.3
+60 silly idealTree ├── http-errors@2.0.0
+60 silly idealTree ├── iconv-lite@0.4.24
+60 silly idealTree ├── inherits@2.0.4
+60 silly idealTree ├── ipaddr.js@1.9.1
+60 silly idealTree ├── jake@10.8.6
+60 silly idealTree ├── media-typer@0.3.0
+60 silly idealTree ├── merge-descriptors@1.0.1
+60 silly idealTree ├── methods@1.1.2
+60 silly idealTree ├── mime-db@1.52.0
+60 silly idealTree ├── mime-types@2.1.35
+60 silly idealTree ├── mime@1.6.0
+60 silly idealTree ├─┬ minimatch@3.1.2
+60 silly idealTree │ └── brace-expansion@1.1.11
+60 silly idealTree ├── ms@2.0.0
+60 silly idealTree ├── negotiator@0.6.3
+60 silly idealTree ├── object-inspect@1.12.3
+60 silly idealTree ├── on-finished@2.4.1
+60 silly idealTree ├── oracledb@6.0.0
+60 silly idealTree ├── parseurl@1.3.3
+60 silly idealTree ├── path-to-regexp@0.1.7
+60 silly idealTree ├── proxy-addr@2.0.7
+60 silly idealTree ├── qs@6.11.0
+60 silly idealTree ├── range-parser@1.2.1
+60 silly idealTree ├── raw-body@2.5.1
+60 silly idealTree ├── safe-buffer@5.2.1
+60 silly idealTree ├── safer-buffer@2.1.2
+60 silly idealTree ├─┬ send@0.18.0
+60 silly idealTree │ └── ms@2.1.3
+60 silly idealTree ├── serve-static@1.15.0
+60 silly idealTree ├── setprototypeof@1.2.0
+60 silly idealTree ├── side-channel@1.0.4
+60 silly idealTree ├── statuses@2.0.1
+60 silly idealTree ├── supports-color@7.2.0
+60 silly idealTree ├── toidentifier@1.0.1
+60 silly idealTree ├── type-is@1.6.18
+60 silly idealTree ├── unpipe@1.0.0
+60 silly idealTree ├── utils-merge@1.0.1
+60 silly idealTree └── vary@1.1.2
+61 silly generateActionsToTake Starting
+62 silly install generateActionsToTake
+63 silly generateActionsToTake Finishing
+64 silly diffTrees action count 3
+65 silly diffTrees update ejs@3.1.9
+66 silly diffTrees update express@4.18.2
+67 silly diffTrees add oracledb@6.0.0
+68 silly decomposeActions action count 24
+69 silly decomposeActions fetch ejs@3.1.9
+70 silly decomposeActions extract ejs@3.1.9
+71 silly decomposeActions test ejs@3.1.9
+72 silly decomposeActions preinstall ejs@3.1.9
+73 silly decomposeActions build ejs@3.1.9
+74 silly decomposeActions install ejs@3.1.9
+75 silly decomposeActions postinstall ejs@3.1.9
+76 silly decomposeActions finalize ejs@3.1.9
+77 silly decomposeActions fetch express@4.18.2
+78 silly decomposeActions extract express@4.18.2
+79 silly decomposeActions test express@4.18.2
+80 silly decomposeActions preinstall express@4.18.2
+81 silly decomposeActions build express@4.18.2
+82 silly decomposeActions install express@4.18.2
+83 silly decomposeActions postinstall express@4.18.2
+84 silly decomposeActions finalize express@4.18.2
+85 silly decomposeActions fetch oracledb@6.0.0
+86 silly decomposeActions extract oracledb@6.0.0
+87 silly decomposeActions test oracledb@6.0.0
+88 silly decomposeActions preinstall oracledb@6.0.0
+89 silly decomposeActions build oracledb@6.0.0
+90 silly decomposeActions install oracledb@6.0.0
+91 silly decomposeActions postinstall oracledb@6.0.0
+92 silly decomposeActions finalize oracledb@6.0.0
+93 silly executeActions Starting
+94 silly install executeActions
+95 silly doSerial global-install 0
+96 silly doParallel fetch 3
+97 verbose lock using /home/pc06/.npm/_locks/staging-135195bdd2d36c46.lock for /home/pc06/html-workspace/ex-db/node_modules/.staging
+98 silly doParallel extract 3
+99 silly extract ejs@3.1.9
+100 silly extract express@4.18.2
+101 silly extract oracledb@6.0.0
+102 verbose unbuild node_modules/.staging/express-640deafc
+103 verbose unbuild node_modules/.staging/ejs-77ca7718
+104 verbose unbuild node_modules/.staging/oracledb-2a6683c0
+105 silly gentlyRm /home/pc06/html-workspace/ex-db/node_modules/.staging/express-640deafc is being purged from base /home/pc06/html-workspace/ex-db
+106 verbose gentlyRm don't care about contents; nuking /home/pc06/html-workspace/ex-db/node_modules/.staging/express-640deafc
+107 silly gentlyRm /home/pc06/html-workspace/ex-db/node_modules/.staging/ejs-77ca7718 is being purged from base /home/pc06/html-workspace/ex-db
+108 verbose gentlyRm don't care about contents; nuking /home/pc06/html-workspace/ex-db/node_modules/.staging/ejs-77ca7718
+109 verbose tar unpack /home/pc06/.npm/express/4.18.2/package.tgz
+110 verbose tar unpacking to /home/pc06/html-workspace/ex-db/node_modules/.staging/express-640deafc
+111 silly gentlyRm /home/pc06/html-workspace/ex-db/node_modules/.staging/express-640deafc is being purged
+112 verbose gentlyRm don't care about contents; nuking /home/pc06/html-workspace/ex-db/node_modules/.staging/express-640deafc
+113 silly gentlyRm /home/pc06/html-workspace/ex-db/node_modules/.staging/oracledb-2a6683c0 is being purged from base /home/pc06/html-workspace/ex-db
+114 verbose gentlyRm don't care about contents; nuking /home/pc06/html-workspace/ex-db/node_modules/.staging/oracledb-2a6683c0
+115 verbose tar unpack /home/pc06/.npm/ejs/3.1.9/package.tgz
+116 verbose tar unpacking to /home/pc06/html-workspace/ex-db/node_modules/.staging/ejs-77ca7718
+117 silly gentlyRm /home/pc06/html-workspace/ex-db/node_modules/.staging/ejs-77ca7718 is being purged
+118 verbose gentlyRm don't care about contents; nuking /home/pc06/html-workspace/ex-db/node_modules/.staging/ejs-77ca7718
+119 silly gunzTarPerm modes [ '775', '664' ]
+120 verbose tar unpack /home/pc06/.npm/oracledb/6.0.0/package.tgz
+121 verbose tar unpacking to /home/pc06/html-workspace/ex-db/node_modules/.staging/oracledb-2a6683c0
+122 silly gentlyRm /home/pc06/html-workspace/ex-db/node_modules/.staging/oracledb-2a6683c0 is being purged
+123 verbose gentlyRm don't care about contents; nuking /home/pc06/html-workspace/ex-db/node_modules/.staging/oracledb-2a6683c0
+124 silly gunzTarPerm modes [ '775', '664' ]
+125 silly gunzTarPerm modes [ '775', '664' ]
+126 silly gunzTarPerm extractEntry LICENSE
+127 silly gunzTarPerm modified mode [ 'LICENSE', 420, 436 ]
+128 silly gunzTarPerm extractEntry
+129 silly gunzTarPerm modified mode [ '', 493, 509 ]
+130 silly gunzTarPerm extractEntry lib/aqDeqOptions.js
+131 silly gunzTarPerm modified mode [ 'lib/aqDeqOptions.js', 420, 436 ]
+132 silly gunzTarPerm extractEntry lib/application.js
+133 silly gunzTarPerm modified mode [ 'lib/application.js', 420, 436 ]
+134 silly gunzTarPerm extractEntry lib/impl/aqDeqOptions.js
+135 silly gunzTarPerm modified mode [ 'lib/impl/aqDeqOptions.js', 420, 436 ]
+136 silly gunzTarPerm extractEntry lib/aqEnqOptions.js
+137 silly gunzTarPerm modified mode [ 'lib/aqEnqOptions.js', 420, 436 ]
+138 silly gunzTarPerm extractEntry lib/express.js
+139 silly gunzTarPerm modified mode [ 'lib/express.js', 420, 436 ]
+140 silly gunzTarPerm extractEntry LICENSE
+141 silly gunzTarPerm modified mode [ 'LICENSE', 420, 436 ]
+142 silly gunzTarPerm extractEntry bin/
+143 silly gunzTarPerm modified mode [ 'bin/', 493, 509 ]
+144 silly gunzTarPerm extractEntry ejs.js
+145 silly gunzTarPerm modified mode [ 'ejs.js', 420, 436 ]
+146 silly gunzTarPerm extractEntry README.md
+147 silly gunzTarPerm modified mode [ 'README.md', 420, 436 ]
+148 silly gunzTarPerm extractEntry index.js
+149 silly gunzTarPerm modified mode [ 'index.js', 420, 436 ]
+150 silly gunzTarPerm extractEntry lib/router/index.js
+151 silly gunzTarPerm modified mode [ 'lib/router/index.js', 420, 436 ]
+152 silly gunzTarPerm extractEntry lib/impl/aqEnqOptions.js
+153 silly gunzTarPerm modified mode [ 'lib/impl/aqEnqOptions.js', 420, 436 ]
+154 silly gunzTarPerm extractEntry jakefile.js
+155 silly gunzTarPerm modified mode [ 'jakefile.js', 420, 436 ]
+156 silly gunzTarPerm extractEntry package.json
+157 silly gunzTarPerm modified mode [ 'package.json', 420, 436 ]
+158 silly gunzTarPerm extractEntry lib/
+159 silly gunzTarPerm modified mode [ 'lib/', 493, 509 ]
+160 silly gunzTarPerm extractEntry lib/middleware/init.js
+161 silly gunzTarPerm modified mode [ 'lib/middleware/init.js', 420, 436 ]
+162 silly gunzTarPerm extractEntry lib/router/layer.js
+163 silly gunzTarPerm modified mode [ 'lib/router/layer.js', 420, 436 ]
+164 silly gunzTarPerm extractEntry ejs.min.js
+165 silly gunzTarPerm modified mode [ 'ejs.min.js', 420, 436 ]
+166 silly gunzTarPerm extractEntry usage.txt
+167 silly gunzTarPerm modified mode [ 'usage.txt', 420, 436 ]
+168 silly gunzTarPerm extractEntry lib/ejs.js
+169 silly gunzTarPerm modified mode [ 'lib/ejs.js', 493, 509 ]
+170 silly gunzTarPerm extractEntry lib/aqMessage.js
+171 silly gunzTarPerm modified mode [ 'lib/aqMessage.js', 420, 436 ]
+172 silly gunzTarPerm extractEntry lib/impl/aqMessage.js
+173 silly gunzTarPerm modified mode [ 'lib/impl/aqMessage.js', 420, 436 ]
+174 silly gunzTarPerm extractEntry lib/utils.js
+175 silly gunzTarPerm modified mode [ 'lib/utils.js', 420, 436 ]
+176 silly gunzTarPerm extractEntry bin/cli.js
+177 silly gunzTarPerm modified mode [ 'bin/cli.js', 493, 509 ]
+178 silly gunzTarPerm extractEntry lib/middleware/query.js
+179 silly gunzTarPerm modified mode [ 'lib/middleware/query.js', 420, 436 ]
+180 silly gunzTarPerm extractEntry lib/request.js
+181 silly gunzTarPerm modified mode [ 'lib/request.js', 420, 436 ]
+182 silly gunzTarPerm extractEntry lib/aqQueue.js
+183 silly gunzTarPerm modified mode [ 'lib/aqQueue.js', 420, 436 ]
+184 silly gunzTarPerm extractEntry lib/impl/aqQueue.js
+185 silly gunzTarPerm modified mode [ 'lib/impl/aqQueue.js', 420, 436 ]
+186 silly gunzTarPerm extractEntry lib/response.js
+187 silly gunzTarPerm modified mode [ 'lib/response.js', 420, 436 ]
+188 silly gunzTarPerm extractEntry lib/router/route.js
+189 silly gunzTarPerm modified mode [ 'lib/router/route.js', 420, 436 ]
+190 silly gunzTarPerm extractEntry lib/thin/protocol/messages/auth.js
+191 silly gunzTarPerm modified mode [ 'lib/thin/protocol/messages/auth.js', 420, 436 ]
+192 silly gunzTarPerm extractEntry lib/thin/protocol/messages/base.js
+193 silly gunzTarPerm modified mode [ 'lib/thin/protocol/messages/base.js', 420, 436 ]
+194 silly gunzTarPerm extractEntry lib/utils.js
+195 silly gunzTarPerm modified mode [ 'lib/utils.js', 420, 436 ]
+196 silly gunzTarPerm extractEntry lib/view.js
+197 silly gunzTarPerm modified mode [ 'lib/view.js', 420, 436 ]
+198 silly gunzTarPerm extractEntry lib/thin/protocol/buffer.js
+199 silly gunzTarPerm modified mode [ 'lib/thin/protocol/buffer.js', 420, 436 ]
+200 silly gunzTarPerm extractEntry lib/thin/protocol/capabilities.js
+201 silly gunzTarPerm modified mode [ 'lib/thin/protocol/capabilities.js', 420, 436 ]
+202 silly gunzTarPerm extractEntry package.json
+203 silly gunzTarPerm modified mode [ 'package.json', 420, 436 ]
+204 silly gunzTarPerm extractEntry History.md
+205 silly gunzTarPerm modified mode [ 'History.md', 420, 436 ]
+206 silly gunzTarPerm extractEntry lib/thin/protocol/messages/commit.js
+207 silly gunzTarPerm modified mode [ 'lib/thin/protocol/messages/commit.js', 420, 436 ]
+208 silly gunzTarPerm extractEntry lib/connection.js
+209 silly gunzTarPerm modified mode [ 'lib/connection.js', 420, 436 ]
+210 silly gunzTarPerm extractEntry Readme.md
+211 silly gunzTarPerm modified mode [ 'Readme.md', 420, 436 ]
+212 silly gunzTarPerm extractEntry lib/impl/connection.js
+213 silly gunzTarPerm modified mode [ 'lib/impl/connection.js', 420, 436 ]
+214 silly gunzTarPerm extractEntry lib/thin/connection.js
+215 silly gunzTarPerm modified mode [ 'lib/thin/connection.js', 420, 436 ]
+216 silly gunzTarPerm extractEntry lib/thin/sqlnet/connStrategy.js
+217 silly gunzTarPerm modified mode [ 'lib/thin/sqlnet/connStrategy.js', 420, 436 ]
+218 silly gunzTarPerm extractEntry lib/constants.js
+219 silly gunzTarPerm modified mode [ 'lib/constants.js', 420, 436 ]
+220 silly gunzTarPerm extractEntry lib/thin/protocol/constants.js
+221 silly gunzTarPerm modified mode [ 'lib/thin/protocol/constants.js', 420, 436 ]
+222 silly gunzTarPerm extractEntry lib/thin/sqlnet/constants.js
+223 silly gunzTarPerm modified mode [ 'lib/thin/sqlnet/constants.js', 420, 436 ]
+224 silly gunzTarPerm extractEntry lib/thin/protocol/messages/dataType.js
+225 silly gunzTarPerm modified mode [ 'lib/thin/protocol/messages/dataType.js', 420, 436 ]
+226 silly gunzTarPerm extractEntry examples/dbconfig.js
+227 silly gunzTarPerm modified mode [ 'examples/dbconfig.js', 420, 436 ]
+228 silly gunzTarPerm extractEntry lib/dbObject.js
+229 silly gunzTarPerm modified mode [ 'lib/dbObject.js', 420, 436 ]
+230 silly gunzTarPerm extractEntry lib/impl/dbObject.js
+231 silly gunzTarPerm modified mode [ 'lib/impl/dbObject.js', 420, 436 ]
+232 silly gunzTarPerm extractEntry lib/thin/dbObject.js
+233 silly gunzTarPerm modified mode [ 'lib/thin/dbObject.js', 420, 436 ]
+234 silly gunzTarPerm extractEntry lib/thin/protocol/encryptDecrypt.js
+235 silly gunzTarPerm modified mode [ 'lib/thin/protocol/encryptDecrypt.js', 420, 436 ]
+236 silly gunzTarPerm extractEntry lib/errors.js
+237 silly gunzTarPerm modified mode [ 'lib/errors.js', 420, 436 ]
+238 silly gunzTarPerm extractEntry examples/example.js
+239 silly gunzTarPerm modified mode [ 'examples/example.js', 420, 436 ]
+240 silly gunzTarPerm extractEntry lib/thin/protocol/messages/execute.js
+241 silly gunzTarPerm modified mode [ 'lib/thin/protocol/messages/execute.js', 420, 436 ]
+242 silly gentlyRm /home/pc06/html-workspace/ex-db/node_modules/.staging/ejs-77ca7718/node_modules is being purged
+243 verbose gentlyRm don't care about contents; nuking /home/pc06/html-workspace/ex-db/node_modules/.staging/ejs-77ca7718/node_modules
+244 silly gunzTarPerm extractEntry lib/thin/sqlnet/ezConnectResolver.js
+245 silly gunzTarPerm modified mode [ 'lib/thin/sqlnet/ezConnectResolver.js', 420, 436 ]
+246 silly gunzTarPerm extractEntry lib/thin/protocol/messages/fetch.js
+247 silly gunzTarPerm modified mode [ 'lib/thin/protocol/messages/fetch.js', 420, 436 ]
+248 silly gunzTarPerm extractEntry index.js
+249 silly gunzTarPerm modified mode [ 'index.js', 420, 436 ]
+250 silly gunzTarPerm extractEntry lib/impl/index.js
+251 silly gunzTarPerm modified mode [ 'lib/impl/index.js', 420, 436 ]
+252 silly gunzTarPerm extractEntry lib/thin/index.js
+253 silly gunzTarPerm modified mode [ 'lib/thin/index.js', 420, 436 ]
+254 silly gunzTarPerm extractEntry lib/thin/protocol/messages/index.js
+255 silly gunzTarPerm modified mode [ 'lib/thin/protocol/messages/index.js', 420, 436 ]
+256 silly gunzTarPerm extractEntry package/install.js
+257 silly gunzTarPerm modified mode [ 'package/install.js', 420, 436 ]
+258 silly gunzTarPerm extractEntry lib/impl/lob.js
+259 silly gunzTarPerm modified mode [ 'lib/impl/lob.js', 420, 436 ]
+260 silly gunzTarPerm extractEntry lib/lob.js
+261 silly gunzTarPerm modified mode [ 'lib/lob.js', 420, 436 ]
+262 silly gunzTarPerm extractEntry lib/thin/lob.js
+263 silly gunzTarPerm modified mode [ 'lib/thin/lob.js', 420, 436 ]
+264 silly gunzTarPerm extractEntry lib/thin/protocol/messages/lobOp.js
+265 silly gunzTarPerm modified mode [ 'lib/thin/protocol/messages/lobOp.js', 420, 436 ]
+266 silly gunzTarPerm extractEntry lib/thin/protocol/messages/logOff.js
+267 silly gunzTarPerm modified mode [ 'lib/thin/protocol/messages/logOff.js', 420, 436 ]
+268 silly gunzTarPerm extractEntry lib/thin/sqlnet/navNodes.js
+269 silly gunzTarPerm modified mode [ 'lib/thin/sqlnet/navNodes.js', 420, 436 ]
+270 silly gunzTarPerm extractEntry lib/thin/sqlnet/networkSession.js
+271 silly gunzTarPerm modified mode [ 'lib/thin/sqlnet/networkSession.js', 420, 436 ]
+272 silly gentlyRm /home/pc06/html-workspace/ex-db/node_modules/.staging/express-640deafc/node_modules is being purged
+273 verbose gentlyRm don't care about contents; nuking /home/pc06/html-workspace/ex-db/node_modules/.staging/express-640deafc/node_modules
+274 silly gunzTarPerm extractEntry lib/thin/sqlnet/ntTcp.js
+275 silly gunzTarPerm modified mode [ 'lib/thin/sqlnet/ntTcp.js', 420, 436 ]
+276 silly gunzTarPerm extractEntry lib/thin/sqlnet/nvStrToNvPair.js
+277 silly gunzTarPerm modified mode [ 'lib/thin/sqlnet/nvStrToNvPair.js', 420, 436 ]
+278 silly gunzTarPerm extractEntry lib/oracledb.js
+279 silly gunzTarPerm modified mode [ 'lib/oracledb.js', 420, 436 ]
+280 silly gunzTarPerm extractEntry lib/thin/protocol/oson.js
+281 silly gunzTarPerm modified mode [ 'lib/thin/protocol/oson.js', 420, 436 ]
+282 silly gunzTarPerm extractEntry lib/thin/protocol/packet.js
+283 silly gunzTarPerm modified mode [ 'lib/thin/protocol/packet.js', 420, 436 ]
+284 silly gunzTarPerm extractEntry lib/thin/sqlnet/packet.js
+285 silly gunzTarPerm modified mode [ 'lib/thin/sqlnet/packet.js', 420, 436 ]
+286 silly gunzTarPerm extractEntry lib/thin/sqlnet/paramParser.js
+287 silly gunzTarPerm modified mode [ 'lib/thin/sqlnet/paramParser.js', 420, 436 ]
+288 silly gunzTarPerm extractEntry lib/thin/protocol/messages/ping.js
+289 silly gunzTarPerm modified mode [ 'lib/thin/protocol/messages/ping.js', 420, 436 ]
+290 silly gunzTarPerm extractEntry lib/impl/pool.js
+291 silly gunzTarPerm modified mode [ 'lib/impl/pool.js', 420, 436 ]
+292 silly gunzTarPerm extractEntry lib/pool.js
+293 silly gunzTarPerm modified mode [ 'lib/pool.js', 420, 436 ]
+294 silly gunzTarPerm extractEntry lib/thin/pool.js
+295 silly gunzTarPerm modified mode [ 'lib/thin/pool.js', 420, 436 ]
+296 silly gunzTarPerm extractEntry lib/poolStatistics.js
+297 silly gunzTarPerm modified mode [ 'lib/poolStatistics.js', 420, 436 ]
+298 silly gunzTarPerm extractEntry lib/thin/protocol/messages/protocol.js
+299 silly gunzTarPerm modified mode [ 'lib/thin/protocol/messages/protocol.js', 420, 436 ]
+300 silly gunzTarPerm extractEntry lib/thin/protocol/protocol.js
+301 silly gunzTarPerm modified mode [ 'lib/thin/protocol/protocol.js', 420, 436 ]
+302 silly gunzTarPerm extractEntry package/prunebinaries.js
+303 silly gunzTarPerm modified mode [ 'package/prunebinaries.js', 420, 436 ]
+304 silly gunzTarPerm extractEntry lib/queryStream.js
+305 silly gunzTarPerm modified mode [ 'lib/queryStream.js', 420, 436 ]
+306 silly gunzTarPerm extractEntry lib/impl/resultset.js
+307 silly gunzTarPerm modified mode [ 'lib/impl/resultset.js', 420, 436 ]
+308 silly gunzTarPerm extractEntry lib/resultset.js
+309 silly gunzTarPerm modified mode [ 'lib/resultset.js', 420, 436 ]
+310 silly gunzTarPerm extractEntry lib/thin/resultSet.js
+311 silly gunzTarPerm modified mode [ 'lib/thin/resultSet.js', 420, 436 ]
+312 silly gunzTarPerm extractEntry lib/thin/protocol/messages/rollback.js
+313 silly gunzTarPerm modified mode [ 'lib/thin/protocol/messages/rollback.js', 420, 436 ]
+314 silly gunzTarPerm extractEntry lib/thin/sqlnet/sessionAtts.js
+315 silly gunzTarPerm modified mode [ 'lib/thin/sqlnet/sessionAtts.js', 420, 436 ]
+316 silly gunzTarPerm extractEntry lib/thin/protocol/messages/sessionRelease.js
+317 silly gunzTarPerm modified mode [ 'lib/thin/protocol/messages/sessionRelease.js', 420, 436 ]
+318 silly gunzTarPerm extractEntry lib/settings.js
+319 silly gunzTarPerm modified mode [ 'lib/settings.js', 420, 436 ]
+320 silly gunzTarPerm extractEntry lib/impl/sodaCollection.js
+321 silly gunzTarPerm modified mode [ 'lib/impl/sodaCollection.js', 420, 436 ]
+322 silly gunzTarPerm extractEntry lib/sodaCollection.js
+323 silly gunzTarPerm modified mode [ 'lib/sodaCollection.js', 420, 436 ]
+324 silly gunzTarPerm extractEntry lib/impl/sodaDatabase.js
+325 silly gunzTarPerm modified mode [ 'lib/impl/sodaDatabase.js', 420, 436 ]
+326 silly gunzTarPerm extractEntry lib/sodaDatabase.js
+327 silly gunzTarPerm modified mode [ 'lib/sodaDatabase.js', 420, 436 ]
+328 silly gunzTarPerm extractEntry lib/impl/sodaDocCursor.js
+329 silly gunzTarPerm modified mode [ 'lib/impl/sodaDocCursor.js', 420, 436 ]
+330 silly gunzTarPerm extractEntry lib/sodaDocCursor.js
+331 silly gunzTarPerm modified mode [ 'lib/sodaDocCursor.js', 420, 436 ]
+332 silly gunzTarPerm extractEntry lib/impl/sodaDocument.js
+333 silly gunzTarPerm modified mode [ 'lib/impl/sodaDocument.js', 420, 436 ]
+334 silly gunzTarPerm extractEntry lib/sodaDocument.js
+335 silly gunzTarPerm modified mode [ 'lib/sodaDocument.js', 420, 436 ]
+336 silly gunzTarPerm extractEntry lib/impl/sodaOperation.js
+337 silly gunzTarPerm modified mode [ 'lib/impl/sodaOperation.js', 420, 436 ]
+338 silly gunzTarPerm extractEntry lib/sodaOperation.js
+339 silly gunzTarPerm modified mode [ 'lib/sodaOperation.js', 420, 436 ]
+340 silly gunzTarPerm extractEntry lib/thin/statement.js
+341 silly gunzTarPerm modified mode [ 'lib/thin/statement.js', 420, 436 ]
+342 silly gunzTarPerm extractEntry lib/transformer.js
+343 silly gunzTarPerm modified mode [ 'lib/transformer.js', 420, 436 ]
+344 silly gunzTarPerm extractEntry lib/types.js
+345 silly gunzTarPerm modified mode [ 'lib/types.js', 420, 436 ]
+346 silly gunzTarPerm extractEntry lib/thin/util.js
+347 silly gunzTarPerm modified mode [ 'lib/thin/util.js', 420, 436 ]
+348 silly gunzTarPerm extractEntry lib/util.js
+349 silly gunzTarPerm modified mode [ 'lib/util.js', 420, 436 ]
+350 silly gunzTarPerm extractEntry lib/thin/protocol/utils.js
+351 silly gunzTarPerm modified mode [ 'lib/thin/protocol/utils.js', 420, 436 ]
+352 silly gunzTarPerm extractEntry lib/version.js
+353 silly gunzTarPerm modified mode [ 'lib/version.js', 420, 436 ]
+354 silly gunzTarPerm extractEntry lib/thin/protocol/messages/withData.js
+355 silly gunzTarPerm modified mode [ 'lib/thin/protocol/messages/withData.js', 420, 436 ]
+356 silly gunzTarPerm extractEntry package.json
+357 silly gunzTarPerm modified mode [ 'package.json', 420, 436 ]
+358 silly gunzTarPerm extractEntry CHANGELOG.md
+359 silly gunzTarPerm modified mode [ 'CHANGELOG.md', 420, 436 ]
+360 silly gunzTarPerm extractEntry examples/README.md
+361 silly gunzTarPerm modified mode [ 'examples/README.md', 420, 436 ]
+362 silly gunzTarPerm extractEntry package/README.md
+363 silly gunzTarPerm modified mode [ 'package/README.md', 420, 436 ]
+364 silly gunzTarPerm extractEntry README.md
+365 silly gunzTarPerm modified mode [ 'README.md', 420, 436 ]
+366 silly gunzTarPerm extractEntry SECURITY.md
+367 silly gunzTarPerm modified mode [ 'SECURITY.md', 420, 436 ]
+368 silly gunzTarPerm extractEntry build/Release/oracledb-6.0.0-darwin-x64.node
+369 silly gunzTarPerm modified mode [ 'build/Release/oracledb-6.0.0-darwin-x64.node', 493, 509 ]
+370 silly gunzTarPerm extractEntry build/Release/oracledb-6.0.0-linux-arm64.node
+371 silly gunzTarPerm modified mode [ 'build/Release/oracledb-6.0.0-linux-arm64.node', 493, 509 ]
+372 silly gunzTarPerm extractEntry build/Release/oracledb-6.0.0-linux-x64.node
+373 silly gunzTarPerm modified mode [ 'build/Release/oracledb-6.0.0-linux-x64.node', 493, 509 ]
+374 silly gunzTarPerm extractEntry build/Release/oracledb-6.0.0-win32-x64.node
+375 silly gunzTarPerm modified mode [ 'build/Release/oracledb-6.0.0-win32-x64.node', 493, 509 ]
+376 silly gunzTarPerm extractEntry LICENSE.txt
+377 silly gunzTarPerm modified mode [ 'LICENSE.txt', 420, 436 ]
+378 silly gunzTarPerm extractEntry NOTICE.txt
+379 silly gunzTarPerm modified mode [ 'NOTICE.txt', 420, 436 ]
+380 silly gunzTarPerm extractEntry build/Release/oracledb-6.0.0-darwin-x64.node-buildinfo.txt
+381 silly gunzTarPerm modified mode [ 'build/Release/oracledb-6.0.0-darwin-x64.node-buildinfo.txt',
+381 silly gunzTarPerm   420,
+381 silly gunzTarPerm   436 ]
+382 silly gunzTarPerm extractEntry build/Release/oracledb-6.0.0-js-buildinfo.txt
+383 silly gunzTarPerm modified mode [ 'build/Release/oracledb-6.0.0-js-buildinfo.txt', 420, 436 ]
+384 silly gunzTarPerm extractEntry build/Release/oracledb-6.0.0-linux-arm64.node-buildinfo.txt
+385 silly gunzTarPerm modified mode [ 'build/Release/oracledb-6.0.0-linux-arm64.node-buildinfo.txt',
+385 silly gunzTarPerm   420,
+385 silly gunzTarPerm   436 ]
+386 silly gunzTarPerm extractEntry build/Release/oracledb-6.0.0-linux-x64.node-buildinfo.txt
+387 silly gunzTarPerm modified mode [ 'build/Release/oracledb-6.0.0-linux-x64.node-buildinfo.txt',
+387 silly gunzTarPerm   420,
+387 silly gunzTarPerm   436 ]
+388 silly gunzTarPerm extractEntry build/Release/oracledb-6.0.0-win32-x64.node-buildinfo.txt
+389 silly gunzTarPerm modified mode [ 'build/Release/oracledb-6.0.0-win32-x64.node-buildinfo.txt',
+389 silly gunzTarPerm   420,
+389 silly gunzTarPerm   436 ]
+390 silly gunzTarPerm extractEntry THIRD_PARTY_LICENSES.txt
+391 silly gunzTarPerm modified mode [ 'THIRD_PARTY_LICENSES.txt', 420, 436 ]
+392 silly gentlyRm /home/pc06/html-workspace/ex-db/node_modules/.staging/oracledb-2a6683c0/node_modules is being purged
+393 verbose gentlyRm don't care about contents; nuking /home/pc06/html-workspace/ex-db/node_modules/.staging/oracledb-2a6683c0/node_modules
+394 silly doParallel preinstall 3
+395 silly preinstall ejs@3.1.9 /home/pc06/html-workspace/ex-db/node_modules/.staging/ejs-77ca7718
+396 info lifecycle ejs@3.1.9~preinstall: ejs@3.1.9
+397 silly preinstall express@4.18.2 /home/pc06/html-workspace/ex-db/node_modules/.staging/express-640deafc
+398 info lifecycle express@4.18.2~preinstall: express@4.18.2
+399 silly preinstall oracledb@6.0.0 /home/pc06/html-workspace/ex-db/node_modules/.staging/oracledb-2a6683c0
+400 info lifecycle oracledb@6.0.0~preinstall: oracledb@6.0.0
+401 silly lifecycle ejs@3.1.9~preinstall: no script for preinstall, continuing
+402 silly lifecycle express@4.18.2~preinstall: no script for preinstall, continuing
+403 silly lifecycle oracledb@6.0.0~preinstall: no script for preinstall, continuing
+404 silly doReverseSerial remove 0
+405 silly doSerial move 0
+406 silly doSerial finalize 3
+407 silly finalize /home/pc06/html-workspace/ex-db/node_modules/ejs
+408 silly finalize /home/pc06/html-workspace/ex-db/node_modules/express
+409 silly finalize /home/pc06/html-workspace/ex-db/node_modules/oracledb
+410 silly doSerial build 3
+411 silly build ejs@3.1.9
+412 info linkStuff ejs@3.1.9
+413 silly linkStuff ejs@3.1.9 has /home/pc06/html-workspace/ex-db/node_modules as its parent node_modules
+414 verbose linkBins ejs@3.1.9
+415 verbose link bins [ { ejs: 'bin/cli.js' },
+415 verbose link bins   '/home/pc06/html-workspace/ex-db/node_modules/.bin',
+415 verbose link bins   false ]
+416 verbose linkMans ejs@3.1.9
+417 silly build express@4.18.2
+418 info linkStuff express@4.18.2
+419 silly linkStuff express@4.18.2 has /home/pc06/html-workspace/ex-db/node_modules as its parent node_modules
+420 verbose linkBins express@4.18.2
+421 verbose linkMans express@4.18.2
+422 silly build oracledb@6.0.0
+423 info linkStuff oracledb@6.0.0
+424 silly linkStuff oracledb@6.0.0 has /home/pc06/html-workspace/ex-db/node_modules as its parent node_modules
+425 verbose linkBins oracledb@6.0.0
+426 verbose linkMans oracledb@6.0.0
+427 silly doSerial global-link 0
+428 silly doParallel update-linked 0
+429 silly doSerial install 3
+430 silly install ejs@3.1.9 /home/pc06/html-workspace/ex-db/node_modules/.staging/ejs-77ca7718
+431 info lifecycle ejs@3.1.9~install: ejs@3.1.9
+432 silly lifecycle ejs@3.1.9~install: no script for install, continuing
+433 silly install express@4.18.2 /home/pc06/html-workspace/ex-db/node_modules/.staging/express-640deafc
+434 info lifecycle express@4.18.2~install: express@4.18.2
+435 silly lifecycle express@4.18.2~install: no script for install, continuing
+436 silly install oracledb@6.0.0 /home/pc06/html-workspace/ex-db/node_modules/.staging/oracledb-2a6683c0
+437 info lifecycle oracledb@6.0.0~install: oracledb@6.0.0
+438 verbose lifecycle oracledb@6.0.0~install: unsafe-perm in lifecycle true
+439 verbose lifecycle oracledb@6.0.0~install: PATH: /usr/share/npm/bin/node-gyp-bin:/home/pc06/html-workspace/ex-db/node_modules/oracledb/node_modules/.bin:/home/pc06/html-workspace/ex-db/node_modules/.bin:/u01/app/oracle/product/11.2.0/xe/bin:/u01/app/oracle/product/11.2.0/xe/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/usr/lib/jvm/jdk1.8.0_231/bin:/usr/lib/jvm/jdk1.8.0_231/bin
+440 verbose lifecycle oracledb@6.0.0~install: CWD: /home/pc06/html-workspace/ex-db/node_modules/oracledb
+441 silly lifecycle oracledb@6.0.0~install: Args: [ '-c', 'node package/install.js' ]
+442 silly lifecycle oracledb@6.0.0~install: Returned: code: 87  signal: null
+443 info lifecycle oracledb@6.0.0~install: Failed to exec install script
+444 verbose unlock done using /home/pc06/.npm/_locks/staging-135195bdd2d36c46.lock for /home/pc06/html-workspace/ex-db/node_modules/.staging
+445 silly rollbackFailedOptional Starting
+446 silly rollbackFailedOptional Finishing
+447 silly runTopLevelLifecycles Starting
+448 silly runTopLevelLifecycles Finishing
+449 silly install printInstalled
+450 warn ex-db@1.0.0 No description
+451 warn ex-db@1.0.0 No repository field.
+452 verbose stack Error: oracledb@6.0.0 install: `node package/install.js`
+452 verbose stack Exit status 87
+452 verbose stack     at EventEmitter.<anonymous> (/usr/share/npm/lib/utils/lifecycle.js:232:16)
+452 verbose stack     at emitTwo (events.js:126:13)
+452 verbose stack     at EventEmitter.emit (events.js:214:7)
+452 verbose stack     at ChildProcess.<anonymous> (/usr/share/npm/lib/utils/spawn.js:24:14)
+452 verbose stack     at emitTwo (events.js:126:13)
+452 verbose stack     at ChildProcess.emit (events.js:214:7)
+452 verbose stack     at maybeClose (internal/child_process.js:925:16)
+452 verbose stack     at Process.ChildProcess._handle.onexit (internal/child_process.js:209:5)
+453 verbose pkgid oracledb@6.0.0
+454 verbose cwd /home/pc06/html-workspace/ex-db
+455 error Linux 4.15.0-54-generic
+456 error argv "/usr/bin/node" "/usr/bin/npm" "install" "oracledb"
+457 error node v8.10.0
+458 error npm  v3.5.2
+459 error code ELIFECYCLE
+460 error oracledb@6.0.0 install: `node package/install.js`
+460 error Exit status 87
+461 error Failed at the oracledb@6.0.0 install script 'node package/install.js'.
+461 error Make sure you have the latest version of node.js and npm installed.
+461 error If you do, this is most likely a problem with the oracledb package,
+461 error not with npm itself.
+461 error Tell the author that this fails on your system:
+461 error     node package/install.js
+461 error You can get information on how to open an issue for this project with:
+461 error     npm bugs oracledb
+461 error Or if that isn't available, you can get their info via:
+461 error     npm owner ls oracledb
+461 error There is likely additional logging output above.
+462 verbose exit [ 1, true ]

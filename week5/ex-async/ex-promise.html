@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //async를 쓰면 무조건 promise로 리턴해줌
+        let test = async () => {
+            // fetch 는 javascript 에 내장된 웹 API로 비동기 네트워크 통신을 위한 인터페이스 제공
+            // HTTP 요청을 쉽게 생성할 수 있으며 Promise 기반으로 동작하여 비동기 처리를 간편하게 할 수 있다.
+            // fetch는 promise를 리턴하는데
+            // promise는 오류가 나도 일단 리턴을 해줌
+            // await은 Promise 가 처리될때까지 대기하다가 처리되면 해당결과를 반환
+            let res = await fetch('https://api.upbit.com/v1/market/all');
+            console.log(res);
+            let result = res.json();
+            console.log(result);
+            result.then((data) => console.log(data)).catch((error)=>{console.log(error)});
+        }
+        test();
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
