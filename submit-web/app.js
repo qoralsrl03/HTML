@@ -23,3 +23,7 @@ app.get('/CPU', function (req, res) {
 app.get('/RAM', function (req, res) {
     res.render('RAM'); //CPU.ejs 파일을 렌더링하여 응답으로 보냄
 });
+
+app.get('/Login', function (req, res) {
+    res.render('Login'); //CPU.ejs 파일을 렌더링하여 응답으로 보냄
+});
