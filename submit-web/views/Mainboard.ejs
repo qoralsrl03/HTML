@@ -19,7 +19,7 @@
 
 
     <body>
-        
+
         <%-include('common-header');%>
 
         <div class="root container-fluid" style="padding: 0;">
@@ -64,48 +64,10 @@
 
                     </div>
                 </div>
+                <%-include('common-script');%>
             </div>
 
             <%-include('common-footer');%>
 
         </div>
-       
-        <script>
-            const GC1Text = document.querySelector('.Mainboard-1-TEXT');
-            const scrollTriggerPoint = 300; // 스크롤 트리거 포인트
-            let isShown = false;
-
-            window.addEventListener('scroll', function () {
-                const scrollY = window.scrollY;
-
-                if (scrollY >= scrollTriggerPoint && !isShown) {
-                    GC1Text.classList.add('fadeOut');
-                    isShown = true;
-                } else if (scrollY < scrollTriggerPoint && isShown) {
-                    GC1Text.classList.remove('fadeOut');
-                    isShown = false;
-                }
-            });
-
-            // GC-2-TEXT 애니메이션 제어
-            const GC2Text = document.querySelector('.Mainboard-2-TEXT');
-            const scrollTriggerPoint2 = 600; // 스크롤 트리거 포인트
-            let isShown2 = false;
-
-            window.addEventListener('scroll', function () {
-                const scrollY = window.scrollY;
-
-                if (scrollY <= scrollTriggerPoint2 && !isShown2) {
-                    GC2Text.classList.add('fadeOut2');
-                    isShown2 = true;
-                } else if (scrollY < 1300 && scrollY > scrollTriggerPoint2 && isShown2) {
-                    GC2Text.classList.remove('fadeOut2');
-                    isShown2 = false;
-                } else if (scrollY > 1300) {
-                    GC2Text.classList.add('fadeOut2');
-                    isShown2 = true;
-                }
-            });
-
-        </script>
     </body>

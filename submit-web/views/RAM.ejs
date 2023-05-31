@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.4.js"></script>
+    <link rel="stylesheet" href="main.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="root container-fluid" style="padding: 0;">
+
+        <%-include('common-header');%>
+
+            <main>
+                <div class="div-1">
+                    <div class="RAM-1" id="RAM-first">
+                        <img src="./화면구현사진모음/램사진.png">
+                        <div class="RAM-1-TEXT">
+                            <h2>누구도 따라올 수 없는 스피드</h2>
+                            <h2>새로운 시대의 서막을 알리는 DDR5</h2>
+                            <br>
+                            <br>
+                            <!--본문 내용-->
+                            <img src="./화면구현사진모음/램스펙.png">
+                        </div>
+                    </div>
+                </div>
+                <div class="div-2">
+                    <div class="RAM-2" id="RAM-second">
+                        <img src="./화면구현사진모음/램-2.png">
+                        <div class="RAM-2-TEXT">
+                            <h2>게임용 PC를 위한 RAM 선택 가이드</h2>
+                            <h2>메인보드와 호환이 되는가?</h2>
+                            <br>
+                            <br>
+                            <!--본문 내용-->
+                            <h4>램은 컴퓨터 실행시의 단기 데이터를 저장합니다.
+                                <hr>
+                                프로그램을 구동 시 프로그램의 데이터에 빠르게 접근하고
+                                <hr>
+                                빠르게 필요한 데이터를 읽어야 합니다.
+                                <hr>
+                                RAM 용량과 주파수를 고려하기 전에 먼저 RAM이
+                                <hr>
+                                메인보드 및 프로세서와 호환되는지 확인해야 합니다.
+                                <hr>
+                                잘못된 유형의 모듈은 작동 자체가 되지 않으며
+                                <hr>
+                                PC에 적합하지 않은 사양의 RAM은 낮은 성능을 발휘합니다.
+                            </h4>
+
+                        </div>
+                    </div>
+                </div>
+            </main>
+
+            <%-include('common-script');%>
+    </div>
+
+    <%-include('common-footer');%>
+
+</body>
+
+</html>
