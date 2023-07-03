@@ -1,0 +1,32 @@
+리눅스에서 Visual Studio Code (VS Code)와 Oracle 데이터베이스를 연동하는 방법에 대해 설명드리겠습니다.
+
+1. Oracle Instant Client 설치:
+   - Oracle 데이터베이스에 연결하기 위해 Oracle Instant Client를 설치해야 합니다. Oracle 홈페이지에서 Instant Client 패키지를 다운로드합니다. (https://www.oracle.com/database/technologies/instant-client/linux-x86-64-downloads.html)
+   - 압축을 푼 후에 생성된 디렉토리로 이동합니다.
+
+2. 환경 변수 설정:
+   - 터미널에서 다음 명령을 실행하여 환경 변수를 설정합니다.
+     ```
+     export LD_LIBRARY_PATH=/path/to/instantclient_12_2
+     export PATH=$PATH:/path/to/instantclient_12_2
+     ```
+
+3. VS Code 설치:
+   - 리눅스에서 VS Code를 설치합니다. Visual Studio Code 공식 웹사이트(https://code.visualstudio.com/)에서 다운로드할 수 있습니다.
+
+4. "Oracle" 확장 설치:
+   - VS Code를 열고 좌측 메뉴에서 "확장" 아이콘을 클릭합니다.
+   - 검색 창에 "Oracle"을 입력하고 "Oracle" 확장을 찾아 설치합니다.
+
+5. Oracle 연결 설정:
+   - VS Code 상단 메뉴에서 "보기" > "확장"을 선택하여 "Oracle" 확장을 엽니다.
+   - "Oracle" 확장이 활성화되면 좌측 사이드바에 "Oracle" 패널이 표시됩니다.
+   - "Oracle" 패널에서 "+" 버튼을 클릭하여 연결 구성을 시작합니다.
+   - 필요한 정보를 입력하고 연결을 설정합니다. 이때 호스트, 포트, 서비스 이름, 사용자 이름, 비밀번호 등을 입력해야 합니다.
+
+6. 연결 테스트:
+   - 연결 구성이 완료되면 "Oracle" 패널에서 생성한 연결을 선택합니다.
+   - "Oracle" 패널에서 "연결 테스트" 버튼을 클릭하여 연결을 테스트합니다.
+   - 연결이 성공하면 "연결 성공" 메시지가 표시됩니다.
+
+이제 리눅스에서 VS Code와 Oracle을 성공적으로 연동했습니다. 이제 VS Code를 사용하여 Oracle 데이터베이스와 작업할 수 있습니다.
